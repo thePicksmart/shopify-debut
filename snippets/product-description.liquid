@@ -1,0 +1,29 @@
+<div class="product-single__description rte" itemprop="description">
+  <div class="section-description">Detailed Information</div>
+  {{ product.description }}
+</div>
+<!-- <div style="height: 10px; width: 600px; background-color: #f3f3f3; display: block; margin: 0 auto;"></div> -->
+<img src="https://storage.googleapis.com/reqo-images-europe-west1/product-template/absolutely-direct-0412.png" style="width: 600px; display: block; margin: 0 auto;"/>
+
+{% include 'related-products' %}
+
+<div class="mobile-divider show-on-mobile"></div>
+
+{% comment %} <div id="stamped-main-widget" class="stamped-main-widget"
+  data-product-id="{{ product.id }}"
+  data-name="{{ product.title | escape }}"
+  data-url="{{ shop.url }}{{ product.url }}"
+  data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}"
+  data-description="{{ product.description | escape }}"
+  data-product-sku="{{product.handle}}">
+    {{ product.metafields.stamped.reviews }}
+</div> {% endcomment %}
+<script>
+  $(document).ready(function(){
+    $("div.layout-b").hide();
+    $("span.factory-container").html($(".product-single__description .factory"));
+    $('.stamped-header-title').removeClass('stamped-header-title')
+    $('#stamped-main-widget h2').addClass('stamped-header-title-custom')
+  });
+</script>
+

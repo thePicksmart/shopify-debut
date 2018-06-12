@@ -1,0 +1,194 @@
+<!--  THE HOTEL LIKE BEDROOM  -->
+  <div id="the-hotel-like-bedroom" class="anchor-placeholder"></div>
+  <div class="collection-section-header">THE HOTEL-LIKE BEDROOM</div>
+  <div class="bedroom-section-container">
+    <img style="margin-bottom: -7px;" class="bedroom-section-background-img" src="https://storage.googleapis.com/picksmart-img-au/collection-page/bedroom/img-2.png"/>
+    <div class="bedroom-section-full-container hide-on-mobile">
+      <div class="bedroom-section-full-text">Hotel like bedroom isn’t hard to achieve. The easiest way to give your bedroom a makeover is simply changing the sheets and pillows. Make your bedroom feel like a five-star luxury hotel suite with Thepicksmart’s top picks!</div>
+      <div class="bedroom-section-full-item">
+        <img class="bedroom-section-full-img" src="https://storage.googleapis.com/picksmart-img-au/collection-page/bedroom/item-serona.png" />
+        {% for product in collections.bedroom.products %}
+        {% if product.tags contains "hotellikefeature" %}
+        <div class="kitchen-item-text-2 bedroom-item-text-1">
+          <div class="product__title" style="width: 100%">
+            <div class="collection-feature-product-title">{{ product.title }}</div>
+          </div>
+          <div class="product__prices">
+            {% if product.compare_at_price > product.price %}
+            <span class="product__price--on-sale" style="color: #333;">
+              {% if product.price_varies %}
+              {% assign sale_price = product.price | money %}
+              {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+              {% else %}
+              <strong class="visually-hidden">{{ 'products.product.sale_price' | t }}</strong>
+              <span style="color: #333; font-size: 16px; font-family: helvetica;">{{ product.price | money }}</span>
+              {% endif %}
+            </span>
+
+            {% else %}
+            <span class="product__price">
+              {% if product.price_varies %}
+              {% assign price = product.price | money %}
+              {{ 'products.product.from_text_html' | t: price: price }}
+              {% else %}
+              <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+              {{ product.price | money }}
+              {% endif %}
+            </span>
+
+            {% endif %}
+
+            {% if product.compare_at_price > product.price %}
+            <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+            <span class="product-single__price--compare" style="font-size:12px; text-decoration: line-through;">Brand Price {{ product.compare_at_price | money }}</span>
+            {% endif %}
+
+            {% if on_sale %}
+            <!--       <span class="badge badge--sale"><span>{{ 'products.product.on_sale' | t }}</span></span> -->
+            {% endif %}
+
+            {% comment %}
+            {% if sold_out %}
+            <span class="badge badge--sold-out"><span>{{ 'products.product.sold_out' | t }}</span></span>
+            {% endif %}
+            {% endcomment %}
+
+            {% if sold_out %}
+            <strong class="sold-out-text">{{ 'products.product.sold_out' | t }}</strong>
+            {% endif %}
+
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="show-on-mobile" style="background-color: rgba(172, 162, 129, 0.64);">
+      <div style="color: white; line-height: normal; padding: 15px;">Hotel like bedroom isn’t hard to achieve. The easiest way to give your bedroom a makeover is simply changing the sheets and pillows. Make your bedroom feel like a five-star luxury hotel suite with Thepicksmart’s top picks!</div>
+      <div style="padding: 5px;">
+        <img width="17%" id="seronoa-item-img" src="https://storage.googleapis.com/picksmart-img-au/collection-page/bedroom/item-serona.png" />
+        {% for product in collections.bedroom.products %}
+        {% if product.tags contains "hotellikefeature" %}
+        <div class="kitchen-item-text-2" id="serona-item-text">
+          <div class="product__title" style="width: 100%">
+            <div class="collection-feature-product-title" style="font-size: 12px;">{{ product.title }}</div>
+          </div>
+          <div class="product__prices">
+            {% if product.compare_at_price > product.price %}
+            <span class="product__price--on-sale" style="color: #333;">
+              {% if product.price_varies %}
+              {% assign sale_price = product.price | money %}
+              {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+              {% else %}
+              <strong class="visually-hidden">{{ 'products.product.sale_price' | t }}</strong>
+              <span style="color: #333; font-size: 12px; font-family: helvetica;">{{ product.price | money }}</span>
+              {% endif %}
+            </span>
+
+            {% else %}
+            <span class="product__price">
+              {% if product.price_varies %}
+              {% assign price = product.price | money %}
+              {{ 'products.product.from_text_html' | t: price: price }}
+              {% else %}
+              <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+              {{ product.price | money }}
+              {% endif %}
+            </span>
+
+            {% endif %}
+
+            {% if product.compare_at_price > product.price %}
+            <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+            <span class="product-single__price--compare" style="font-size:12px; text-decoration: line-through;">Brand Price {{ product.compare_at_price | money }}</span>
+            {% endif %}
+
+            {% if on_sale %}
+            <!--       <span class="badge badge--sale"><span>{{ 'products.product.on_sale' | t }}</span></span> -->
+            {% endif %}
+
+            {% comment %}
+            {% if sold_out %}
+            <span class="badge badge--sold-out"><span>{{ 'products.product.sold_out' | t }}</span></span>
+            {% endif %}
+            {% endcomment %}
+
+            {% if sold_out %}
+            <strong class="sold-out-text">{{ 'products.product.sold_out' | t }}</strong>
+            {% endif %}
+
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  
+<!--  THE HOTEL-LIKE BEDROOM PRODUCT LIST  -->
+    <div class="grid grid--uniform custom-collection-grid-list" role="list" style="margin-top: 15px; margin-left: 1%; margin-right: 1%">
+    {% for product in collections.bedroom.products %}
+      {% if product.tags contains "hotellike" %}
+        <div class="product grid__item medium-up--one-third small--one-half slide-up-animation animated custom-grid-item"
+             style="margin-bottom: 10px; padding-left: 1%; padding-right: 1%"
+             role="listitem">
+<!--           <img width="100%" src={{ product | img_url }}/> -->
+          <a href="{{ product.url | within: collection }}" class=" supports-js product__image-wrapper" title="{{ product.title | escape }}" style="border-bottom: none; margin-bottom: 0">
+            <img src="{{ product.featured_image.src | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}">
+          </a>
+          <div style="background-color: white; padding: 7px; margin-top: -7px;">
+            <div class="product__title">
+              <a href="{{ product.url }}" style="border-bottom: none; padding-bottom:0">{{ product.title }}</a>
+            </div>
+              <div class="product__prices">
+              {% if product.compare_at_price > product.price %}
+
+                <span class="product__price--on-sale" style="color: #aca281;">
+                  {% if product.price_varies %}
+                    {% assign sale_price = product.price | money %}
+                    {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+                  {% else %}
+                    <strong class="visually-hidden">{{ 'products.product.sale_price' | t }}</strong>
+                    <span style="color: #aca281;">{{ product.price | money }}</span>
+                    
+                  {% endif %}
+                </span>
+
+              {% else %}
+                <span class="product__price">
+                  {% if product.price_varies %}
+                    {% assign price = product.price | money %}
+                    {{ 'products.product.from_text_html' | t: price: price }}
+                  {% else %}
+                    <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                    {{ product.price | money }}
+                  {% endif %}
+                </span>
+
+              {% endif %}
+
+              {% if product.compare_at_price > product.price %}
+                <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                <div class="product-single__price--compare" style="font-size:12px; text-decoration: line-through" >Brand Price {{ product.compare_at_price | money }}</div>
+              {% endif %}
+
+              {% if on_sale %}
+          <!--       <span class="badge badge--sale"><span>{{ 'products.product.on_sale' | t }}</span></span> -->
+              {% endif %}
+
+              {% comment %}
+              {% if sold_out %}
+                <span class="badge badge--sold-out"><span>{{ 'products.product.sold_out' | t }}</span></span>
+              {% endif %}
+              {% endcomment %}
+
+              {% if sold_out %}
+                <strong class="sold-out-text">{{ 'products.product.sold_out' | t }}</strong>
+              {% endif %}
+
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>

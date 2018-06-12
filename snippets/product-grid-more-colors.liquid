@@ -1,0 +1,27 @@
+
+  {% for option in product.options %}
+
+  {% if option contains "Color" %}
+  {% assign optionName = "option" | append: forloop.index %}
+  {% assign colors = product.variants | map: optionName %}
+  {% assign colorsFiltered = '' %}
+  {% for colorOption in colors %}
+  {% unless colorsFiltered contains colorOption %}     
+  {% assign colorsFiltered = colorsFiltered | append: ', ' | append: colorOption %}     
+  {% endunless %}             
+  {% endfor %}     
+  {% endif %}
+
+  {% endfor %}
+
+  {% assign uniqueColors = colorsFiltered | remove_first: ', ' | split: ', ' %}
+
+  <div class="text-center grid-view-item--more-colors {% unless product.options contains "Color" %}hidden-visible{% endunless %}">
+
+  {% if product.options contains "Color" %}
+    <div>{{ uniqueColors.size }} colors</div>
+    {% else %}
+    <div>1 choice</div>
+  {% endif %}
+</div>
+

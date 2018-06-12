@@ -1,0 +1,813 @@
+{
+  "current": {
+    "color_text": "#3d4246",
+    "color_body_text": "#333",
+    "color_sale_text": "#e00012",
+    "color_borders": "#e8e9eb",
+    "color_button": "#fff",
+    "color_button_text": "#333333",
+    "color_small_button": "#fff",
+    "color_small_button_text": "#333333",
+    "color_text_field": "#fff",
+    "color_text_field_text": "#000",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": 20,
+    "color_body_bg": "#fff",
+    "type_header_family": "Helvetica Neue",
+    "type_header_base_size": "26px",
+    "type_base_family": "Helvetica Neue",
+    "type_base_size": "16px",
+    "type_bold_product_titles": false,
+    "share_image": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "shopify:\/\/shop_images\/favicon-v3.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/thepicksmart-long-v2.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1990c6",
+    "checkout_error_color": "#ff6d6d",
+    "color_price_regular": "#999",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "center",
+          "logo": "shopify:\/\/shop_images\/icon-thepicksmart.png",
+          "logo_max_width": "200",
+          "main_linklist": "main-menu",
+          "message": true,
+          "home_page_only": true,
+          "message_text": "Free Shipping over $20AUD \/ $16USD \/ £12GBP",
+          "message_link": "",
+          "color_bg": "#454545",
+          "color_text": "#ffffff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "section_title": "save 20% on your first order",
+          "subheading": "",
+          "show_background": true,
+          "footer_linklist": "footer-menu",
+          "footer_linklist_two": "",
+          "footer_newsletter_enable": false,
+          "show_payment_icons": true
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": "3",
+          "rows": "8",
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": false,
+          "tags_enable": false
+        }
+      },
+      "1522035897993": {
+        "type": "collection-list",
+        "blocks": {
+          "1522035897993-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "bedroom"
+            }
+          },
+          "1522035897993-1": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "kitchen"
+            }
+          },
+          "1522035897993-2": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "clothing-accessories"
+            }
+          },
+          "1526522279083": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "electronics-acc"
+            }
+          }
+        },
+        "block_order": [
+          "1522035897993-0",
+          "1522035897993-1",
+          "1522035897993-2",
+          "1526522279083"
+        ],
+        "settings": {
+          "title": "",
+          "grid": 3
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_size": "large",
+          "show_quantity_selector": false,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": true,
+          "show_share_buttons": false
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_author": false,
+          "blog_show_date": false,
+          "show_share_buttons": true
+        }
+      },
+      "1522392888145": {
+        "type": "quotes",
+        "blocks": {
+          "1522392888145-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>\"Amazing quality! I actually wake up feeling better these days since I changed my pillow. 5 star isn't enough for this! Highly recommended!!!\"<\/p>",
+              "job": "Designer",
+              "author": "Sara Collins",
+              "location": "Los Angeles, United States"
+            }
+          },
+          "1522392888145-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>\"I emailed the customer service and they got back to me really fast and was extremely supportive in running me through how to use every part of this mixer. Now I know there are so much I can do with this mixer than I thought. I am really glad I got this. Good product! Great customer service!\"<\/p>",
+              "job": "Human Resources",
+              "author": "Alison Owens",
+              "location": "Perth, Australia"
+            }
+          },
+          "1522392888145-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>\"My best friend is turning 30 and I got this cashmere scarf as one of her birthday gifts. She absolutely loved it! It's really soft with beautiful prints. Perfect for women with good taste.\"<\/p>",
+              "job": "Professor",
+              "author": "Eva Meredith",
+              "location": "Austin, United States"
+            }
+          },
+          "1526522897623": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>\"This online store is a life changer. I can really tell they have put in so much work into selecting the products. So far the ones I ordered all turned out great. You guys are on the top of my favorite list!\"<\/p>",
+              "job": "Consultant",
+              "author": "Daniel Lambert",
+              "location": "Sydney, Australia"
+            }
+          },
+          "1526522903800": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>\"I tend to be rather careful when shopping online, but gave Thepicksmart a try with the throw pillows reading through all the reviews. The pillows are lovely, very true to the pictures, excellent craftmanship just as described. I liked the card with factory info packed in the box so I get to know where it comes from.\"<\/p>",
+              "job": "Banker",
+              "author": "David Elliot",
+              "location": "London, United Kingdom"
+            }
+          }
+        },
+        "block_order": [
+          "1522392888145-0",
+          "1522392888145-1",
+          "1522392888145-2",
+          "1526522897623",
+          "1526522903800"
+        ],
+        "settings": {
+          "title": "What Our Customers Say"
+        }
+      },
+      "1522394294574": {
+        "type": "hero",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Luna-taupe-d1._940x_b0eb34e0-cea2-41fd-b3b6-2ecb3c0cf711.png",
+          "alignment": "center",
+          "title": "The highest quality homewares from selected factories worldwide at amazing prices",
+          "text": "",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "button_label": "Discover",
+          "button_link": "shopify:\/\/pages\/about"
+        }
+      },
+      "1526526503995": {
+        "type": "newsletter",
+        "disabled": true,
+        "settings": {
+          "section_title": "save 20% on your first order",
+          "subheading": "",
+          "show_background": true
+        }
+      },
+      "1526883450306": {
+        "type": "custom-content",
+        "blocks": {
+          "1526883464907": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"home-entrance-container\">\n          <div class=\"entrance-item entrance-inspiration\">\n            <div class=\"entrance-shade\"><\/div>\n            <img class=\"entrance-img\" src=\"https:\/\/storage.googleapis.com\/reqo-images-europe-west1\/product\/coral-velvet-blanket\/Coral-velvet-blanket-f6.png\">\n            <div class=\"entrance-text-on-img\">\n              <h2 class=\"h1 mega-title entrance-text entrance-text-inspirations\">Pick Smart. Live Smart.<\/h2>\n              <a href=\"\/blogs\/tips\" class=\"btn hero__btn\">inspirations<\/a>\n            <\/div>\n          <\/div>\n          <div class=\"entrance-item entrance-our-story\">\n            <div class=\"entrance-shade\"><\/div>\n            <img class=\"entrance-img\" src=\"https:\/\/storage.googleapis.com\/reqo-images-europe-west1\/our-story-temp\/our-story-temp-4.png\">\n            <div class=\"entrance-text-on-img\">\n              <h2 class=\"h1 mega-title entrance-text entrance-text-our-story\">How do we achieve finest quality without premium brand pricing?<\/h2>\n              <a href=\"\/pages\/about\" class=\"btn hero__btn\">our story<\/a>\n            <\/div>\n          <\/div>\n        <\/div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "1526883464907"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "1527065085636": {
+        "type": "slideshow-cong",
+        "blocks": {
+          "1527065085636-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1.png",
+              "alignment": "center",
+              "collection": "Kitchen",
+              "title": "Keep'em brewing",
+              "subheading": "From Delonghi Designated Manufacturer",
+              "button_label": "Shop",
+              "button_link": "shopify:\/\/pages\/kitchen-collection",
+              "anchor": ""
+            }
+          },
+          "1527065085636-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/3.png",
+              "alignment": "center",
+              "collection": "Electronics",
+              "title": "Stay powered",
+              "subheading": "From Energizer Designated Manufacturer",
+              "button_label": "Shop",
+              "button_link": "shopify:\/\/pages\/electronics-collection",
+              "anchor": ""
+            }
+          },
+          "1527244288172": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/6.png",
+              "alignment": "top",
+              "collection": "Kitchen",
+              "title": "Happiness is home made",
+              "subheading": "From KitchenAid Designated Manufacturer",
+              "button_label": "Shop",
+              "button_link": "shopify:\/\/pages\/kitchen-collection",
+              "anchor": "happiness-is-home-made"
+            }
+          }
+        },
+        "block_order": [
+          "1527065085636-0",
+          "1527065085636-1",
+          "1527244288172"
+        ],
+        "settings": {
+          "autoplay": true,
+          "autoplay_speed": "4000",
+          "slideshow_height": "small",
+          "text_size": "medium",
+          "default_layout": true
+        }
+      },
+      "1527153293515": {
+        "type": "slideshow-cong",
+        "blocks": {
+          "1527153293515-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2.png",
+              "alignment": "top",
+              "collection": "Clothing & acc",
+              "title": "The jet set",
+              "subheading": "From Marc Jacobs Designated Manufacturer",
+              "button_label": "Shop",
+              "button_link": "shopify:\/\/pages\/clothing-collection",
+              "anchor": "the-jet-set"
+            }
+          },
+          "1527153293515-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5.png",
+              "alignment": "top",
+              "collection": "Bedroom",
+              "title": "YOUR CULINARY  DREAMS ARE SHINING",
+              "subheading": "From WMF Designated Manufacturer",
+              "button_label": "Shop",
+              "button_link": "shopify:\/\/pages\/kitchen-collection",
+              "anchor": "your-culinary-dreams-are-shining"
+            }
+          },
+          "1527244484577": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/4.png",
+              "alignment": "center",
+              "collection": "Bedroom",
+              "title": "The Cozy Layer",
+              "subheading": "From Williams-Sonoma Designated Manufacturer",
+              "button_label": "Shop",
+              "button_link": "shopify:\/\/pages\/bedroom-collection",
+              "anchor": "the-cozy-layer"
+            }
+          }
+        },
+        "block_order": [
+          "1527153293515-0",
+          "1527153293515-1",
+          "1527244484577"
+        ],
+        "settings": {
+          "autoplay": true,
+          "autoplay_speed": "4000",
+          "slideshow_height": "small",
+          "text_size": "medium",
+          "default_layout": false
+        }
+      },
+      "1527234131108": {
+        "type": "swiper",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/1.png",
+          "sub_collection_1": "Keep'em Brewing",
+          "subheading_1": "From Delonghi Designated Manufacturer",
+          "button_label_1": "Shop",
+          "button_link_1": "shopify:\/\/pages\/kitchen-collection",
+          "anchor_1": "",
+          "imageb": "shopify:\/\/shop_images\/3.png",
+          "sub_collection_2": "Stay powered",
+          "subheading_2": "From Energizer Designated Manufacturer",
+          "button_label_2": "Shop",
+          "button_link_2": "shopify:\/\/pages\/electronics-collection",
+          "anchor_2": "",
+          "imagec": "shopify:\/\/shop_images\/6.png",
+          "sub_collection_3": "Happiness is home made",
+          "subheading_3": "From KitchenAid Designated Manufacturer",
+          "button_label_3": "Shop",
+          "button_link_3": "shopify:\/\/pages\/kitchen-collection",
+          "anchor_3": "happiness-is-home-made"
+        }
+      },
+      "1527242846400": {
+        "type": "swiper",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/2.png",
+          "sub_collection_1": "The jet set",
+          "subheading_1": "From Marc Jacobs Designated Manufacturer",
+          "button_label_1": "Shop",
+          "button_link_1": "shopify:\/\/pages\/clothing-collection",
+          "anchor_1": "the-jet-set",
+          "imageb": "shopify:\/\/shop_images\/5.png",
+          "sub_collection_2": "YOUR CULINARY  DREAMS ARE SHINING",
+          "subheading_2": "From WMF Designated Manufacturer",
+          "button_label_2": "Shop",
+          "button_link_2": "shopify:\/\/pages\/kitchen-collection",
+          "anchor_2": "your-culinary-dreams-are-shining",
+          "imagec": "shopify:\/\/shop_images\/4.png",
+          "sub_collection_3": "The Cozy Layer",
+          "subheading_3": "From Williams-Sonoma Designated Manufacturer",
+          "button_label_3": "Shop",
+          "button_link_3": "shopify:\/\/pages\/bedroom-collection",
+          "anchor_3": "the-cozy-layer"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": true
+        }
+      },
+      "1527846145098": {
+        "type": "slideshow-banner",
+        "blocks": {
+          "1527846145098-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Luna-taupe-d1._940x_b0eb34e0-cea2-41fd-b3b6-2ecb3c0cf711.png",
+              "image_mobile": "shopify:\/\/shop_images\/Luna-taupe-d1._940x_b0eb34e0-cea2-41fd-b3b6-2ecb3c0cf711.png",
+              "alignment": "center",
+              "title": "The highest quality homewares  from selected factories worldwide  at amazing prices",
+              "subheading": "",
+              "link": "",
+              "button_label": "Discover",
+              "button_link": "shopify:\/\/pages\/about"
+            }
+          },
+          "1528252419345": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2_8f8a0d0b-3324-4cec-a9a4-e01884f843ab.png",
+              "image_mobile": "shopify:\/\/shop_images\/banner-3_b788c1ad-fc3e-4d46-beaf-ca696f21db49.png",
+              "alignment": "center",
+              "title": "",
+              "subheading": "",
+              "link": "shopify:\/\/pages\/kitchen-collection",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1528252432789": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1_55777e80-fa4f-417e-b3db-aebcf4ef8eaf.png",
+              "image_mobile": "shopify:\/\/shop_images\/banner-2_4870f8e4-daad-4ca5-b595-79bcac45553e.png",
+              "alignment": "center",
+              "title": "",
+              "subheading": "",
+              "link": "shopify:\/\/pages\/clothing-collection",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1528252439426": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/3_722d74fa-5005-4203-bdcd-2dc44a20c9a0.png",
+              "image_mobile": "shopify:\/\/shop_images\/banner-4.png",
+              "alignment": "center",
+              "title": "",
+              "subheading": "",
+              "link": "https:\/\/thepicksmart.com\/#shopify-section-footer",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1527846145098-0",
+          "1528252419345",
+          "1528252432789",
+          "1528252439426"
+        ],
+        "settings": {
+          "autoplay": false,
+          "autoplay_speed": "5000",
+          "slideshow_height": "medium",
+          "text_size": "medium"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "list",
+          "blog_show_author": false,
+          "blog_show_date": false
+        }
+      }
+    },
+    "content_for_index": [
+      "1527846145098",
+      "1522394294574",
+      "1522035897993",
+      "1527065085636",
+      "1527153293515",
+      "1527234131108",
+      "1527242846400",
+      "1522392888145",
+      "1526883450306",
+      "1526526503995"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#788188",
+      "color_sale_text": "#e00012",
+      "color_borders": "#e8e9eb",
+      "color_button": "#fff",
+      "color_button_text": "#3d4246",
+      "color_small_button": "#fff",
+      "color_small_button_text": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": 25,
+      "color_body_bg": "#fff",
+      "type_header_family": "Helvetica Neue",
+      "type_header_base_size": "26px",
+      "type_base_family": "Helvetica Neue",
+      "type_base_size": "16px",
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist_two": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row",
+        "slideshow"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#757575",
+      "color_sale_text": "#ff574f",
+      "color_borders": "#e4e4e4",
+      "color_button": "#ff574f",
+      "color_button_text": "#ffffff",
+      "color_small_button": "#eaeaea",
+      "color_small_button_text": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 30,
+      "color_body_bg": "#f8f8f8",
+      "type_header_family": "Helvetica Neue",
+      "type_header_base_size": "26px",
+      "type_base_family": "Helvetica Neue",
+      "type_base_size": "18px",
+      "type_bold_product_titles": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": "135",
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "autoplay": true,
+            "autoplay_speed": "6000",
+            "slideshow_height": "medium",
+            "text_size": "medium"
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist": "main-menu",
+            "footer_linklist_two": "footer",
+            "footer_newsletter_enable": true,
+            "show_payment_icons": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "enable_zoom": true,
+            "show_share_buttons": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": "2",
+            "rows": "2",
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

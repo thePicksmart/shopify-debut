@@ -1,0 +1,169 @@
+<!doctype html>
+<!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="{{ settings.color_button }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+     n.queue=[];t=b.createElement(e);t.async=!0;
+     t.src=v;s=b.getElementsByTagName(e)[0];
+     s.parentNode.insertBefore(t,s)}(window, document,'script',
+                                     'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '407535969749269');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>< img height="1" width="1" style="display:none"
+                 src="https://www.facebook.com/tr?id=407535969749269&ev=PageView&noscript=1"
+                 /></noscript>
+  <!-- End Facebook Pixel Code -->
+  
+  {% if settings.favicon != blank %}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+  {% endif %}
+
+  {% capture seo_title %}
+    {{ page_title }}
+    {% if current_tags %}
+      {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+    {% endif %}
+    {% if current_page != 1 %}
+      &ndash; {{ 'general.meta.page' | t: page: current_page }}
+    {% endif %}
+    {% unless page_title contains shop.name %}
+      &ndash; {{ shop.name }}
+    {% endunless %}
+  {% endcapture %}
+  <title>{{ seo_title }}</title>
+
+  {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+  
+  {% if seo_title contains 'Premium home decor | Premium kitchenware | Trendy clothing' %}
+    <meta name="keywords" content="premium home decor, premium kitchenware, western clothing collections, trendy clothing and accessories, selected bedroom collections, premium kitchen collections, premium electronic appliances, premium home appliances online, home decor products, kitchen products online, trendy clothing and accessories" >
+  {% elsif seo_title contains 'Selected bedroom collections | Selected bedroom accessories' %}
+    <meta name="keywords" content="selected bedroom collections, selected bedroom accessories, buy selected bedroom collections, bedroom collections for sale, bedroom accessories for sale">
+  {% elsif seo_title contains 'Premium kitchen collections | Premium kitchen appliances' %}
+    <meta name="keywords" content="premium kitchen collections, premium kitchen appliances, premium kitchenware, premium kitchenware online, kitchenware products, premium kitchenware products">
+  {% elsif seo_title contains 'Western clothing collections | Western clothing accessories online' %}
+    <meta name="keywords" content="western clothing collections, western clothing accessories online, western wear clothing collections, western wear clothing accessories online, clothing collection, clothing collection online, clothing accessories online">
+  {% elsif seo_title contains 'Premium electronic appliances | Premium home appliances online' %}
+    <meta name="keywords" content="premium electronic appliances, premium home appliances online, western electronics home appliances, home appliances online, home electronics appliances">
+  {% elsif seo_title contains 'Home kitchen tips | Home decor tips | Accessories tips' %}
+    <meta name="keywords" content="home kitchen tips, home decor tips , accessories tips, easy tips for home decor, easy tips for accessories">
+  {% elsif seo_title contains 'Factory direct home goods | Factory direct home products' %}
+    <meta name="keywords" content="factory direct home goods, factory direct home products, thepicksmart, factory home products, factory goods, selected factory goods, reasonable price factory goods, premium quality factory goods">
+  {% endif %}
+
+  {% include 'social-meta-tags' %}
+
+  {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  {% include 'google-fonts' %}
+
+  <script>
+    var theme = {
+      strings: {
+        addToCart: {{ 'products.product.add_to_cart' | t | json }},
+        soldOut: {{ 'products.product.sold_out' | t | json }},
+        unavailable: {{ 'products.product.unavailable' | t | json }},
+        showMore: {{ 'general.filters.show_more' | t | json }},
+        showLess: {{ 'general.filters.show_less' | t | json }},
+        addressError: {{ 'sections.map.address_error' | t | json }},
+        addressNoResults: {{ 'sections.map.address_no_results' | t | json }},
+        addressQueryLimit: {{ 'sections.map.address_query_limit_html' | t | json }},
+        authError: {{ 'sections.map.auth_error_html' | t | json }}
+      },
+      moneyFormat: {{ shop.money_format | json }}
+    }
+
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+
+  <!--[if (lte IE 9) ]>{{ 'match-media.min.js' | asset_url | script_tag }}<![endif]-->
+
+  {% if template.directory == 'customers' %}
+    <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script><!--<![endif]-->
+    <!--[if lte IE 9]><script src="{{ 'shopify_common.js' | shopify_asset_url }}"></script><![endif]-->
+  {% endif %}
+
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="{{ 'lazysizes.min.js' | asset_url }}"></script><![endif]-->
+
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="{{ 'vendor.js' | asset_url }}"></script><![endif]-->
+
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'theme.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
+  {{ content_for_header }}
+  
+  <!-- Begin Inspectlet JS Code -->
+  <script type="text/javascript" id="inspectletjs">
+  (function() {
+  var insp_ab_loader = true; // set this boolean to false to disable the A/B testing loader
+  window.__insp = window.__insp || [];
+  __insp.push(['wid', 1299449537]);
+  var ldinsp = function(){
+  if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1299449537&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x);if(typeof insp_ab_loader != "undefined" && insp_ab_loader){ var adlt = function(){ var e = document.getElementById('insp_abl'); if(e){ e.parentNode.removeChild(e); __insp.push(['ab_timeout']); }}; var adlc = "body{ visibility: hidden !important; }"; var adln = typeof insp_ab_loader_t != "undefined" ? insp_ab_loader_t : 1200; insp.onerror = adlt; var abti = setTimeout(adlt, adln); window.__insp_abt = abti; var abl = document.createElement('style'); abl.id = "insp_abl"; abl.type = "text/css"; if(abl.styleSheet) abl.styleSheet.cssText = adlc; else abl.appendChild(document.createTextNode(adlc)); document.head.appendChild(abl); } };
+  setTimeout(ldinsp, 0);
+  })();
+  </script>
+  <!-- End Inspectlet JS Code -->
+
+  
+
+
+<!-- BeginConsistentCartAddon --><script>{% if customer %}Shopify.merge_cart_text = '{{ "consistent_cart_addon.merge_cart_text" | t }}' ;Shopify.customer_logged_in = true ;Shopify.customer_email = "{{ customer.email }}" ;Shopify.log_uuids = true;{% else %}Shopify.customer_logged_in = false ;Shopify.customer_email = "" ;Shopify.log_uuids = true;{% endif %}</script><!-- EndConsistentCartAddon -->
+</head>
+
+<body class="template-{{ template | split: '.' | first }}">
+
+  <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+  <div id="SearchDrawer" class="search-bar drawer drawer--top">
+    <div class="search-bar__table">
+      <div class="search-bar__table-cell search-bar__form-wrapper">
+        <form class="search search-bar__form" action="/search" method="get" role="search">
+          <button class="search-bar__submit search__submit btn--link" type="submit">
+            {% include 'icon-search' %}
+            <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
+          </button>
+          <input class="search__input search-bar__input" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}" aria-label="{{ 'general.search.placeholder' | t }}">
+        </form>
+      </div>
+      <div class="search-bar__table-cell text-right">
+        <button type="button" class="btn--link search-bar__close js-drawer-close">
+          {% include 'icon-close' %}
+          <span class="icon__fallback-text">{{ 'general.search.close' | t }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  {% section 'header' %}
+
+  <div class="page-container" id="PageContainer">
+
+    <main class="main-content" id="MainContent" role="main">
+      {{ content_for_layout }}
+    </main>
+
+    {% section 'footer' %}
+
+  </div>
+  {% include 'whatsapp-share' %}
+  
+  <script async type="text/javascript" id="stamped-script-widget" data-api-key="pubkey-Cj4b37rBG7H0d2K5lUsRr3Zr07b1RP" src="https://cdn-stamped-io.azureedge.net/files/widget.min.js"></script>
+{% include 'booster-discounts' %}
+
+<!-- BEEKETINGSCRIPT CODE START -->{% include 'bk-tracking' %}<!-- BEEKETINGSCRIPT CODE END --></body>
+</html>

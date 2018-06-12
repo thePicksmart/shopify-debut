@@ -1,0 +1,239 @@
+<!-- /templates/page.liquid -->
+<!-- <h1 class="small--text-center">{{ page.title }}</h1> -->
+
+<div class="rte collection-wrapper">
+  {{ page.content }} 
+
+  {% include 'subcollection-electronics-lights-on' %}
+  
+  <div id="stay-powered" class="anchor-placeholder"></div>
+  <div class="collection-section-header">STAY POWERED</div>
+  <div class="bedroom-section-container">
+    <img style="margin-bottom: -7px;" src="https://storage.googleapis.com/picksmart-img-au/collection-page/electronics/img-2.png"/>
+    <div class="electronics-section-text hide-on-mobile">Always on the move? Here is a collection just for you. Ranging from ultra slim 4000mAh to powerful 10000mAh power banks, thepicksmart’s ALWAYS POWERED collection will let you stay fully charged 24/7.</div>
+    <div class="electronics-section-text-mobile show-on-mobile">Always on the move? Here is a collection just for you. Ranging from ultra slim 4000mAh to powerful 10000mAh power banks, thepicksmart’s ALWAYS POWERED collection will let you stay fully charged 24/7.</div>
+  </div>
+  <div class="clothing-feature" style="background-color: #fff4bc;">
+    <div style="border-radius: 12px;
+  				background-color: #ffffff;
+  				box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.23);
+                position: relative;">
+      <img class="clothing-feature-img electronics-feature-img" src="https://storage.googleapis.com/picksmart-img-au/collection-page/electronics/item-4000-power-bank.png" />
+      {% for product in collections.electronics-acc.products %}
+      {% if product.tags contains "staypoweredfeature" %}
+        <div class="kitchen-item-text-2 clothing-item-text-1">
+          <div class="product__title" style="width: 100%">
+            <div class="collection-feature-product-title">{{ product.title }}</div>
+          </div>
+          <div class="product__prices">
+            {% if product.compare_at_price > product.price %}
+
+            <span class="product__price--on-sale" >
+              {% if product.price_varies %}
+              {% assign sale_price = product.price | money %}
+              {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+              {% else %}
+              <strong class="visually-hidden">{{ 'products.product.sale_price' | t }}</strong>
+              <span style="color: #333; font-size: 16px; font-family: helvetica;">{{ product.price | money }}</span>
+
+              {% endif %}
+            </span>
+
+            {% else %}
+            <span class="product__price">
+              {% if product.price_varies %}
+              {% assign price = product.price | money %}
+              {{ 'products.product.from_text_html' | t: price: price }}
+              {% else %}
+              <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+              {{ product.price | money }}
+              {% endif %}
+            </span>
+
+            {% endif %}
+
+            {% if product.compare_at_price > product.price %}
+            <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+            <span class="product-single__price--compare" style="font-size:12px; text-decoration: line-through;">Brand Price {{ product.compare_at_price | money }}</span>
+            {% endif %}
+
+            {% if on_sale %}
+            <!--       <span class="badge badge--sale"><span>{{ 'products.product.on_sale' | t }}</span></span> -->
+            {% endif %}
+
+            {% comment %}
+            {% if sold_out %}
+            <span class="badge badge--sold-out"><span>{{ 'products.product.sold_out' | t }}</span></span>
+            {% endif %}
+            {% endcomment %}
+
+            {% if sold_out %}
+            <strong class="sold-out-text">{{ 'products.product.sold_out' | t }}</strong>
+            {% endif %}
+
+          </div>
+          <a href="https://thepicksmart.com/collections/electronics-acc/products/4000mah-power-bank"
+             style="border-radius: 2px;
+                    background-color: #f5f3ef;
+                    border: solid 1px #aca281;
+                    padding: 10px;
+                    display: block">
+            <div style="line-height: normal;
+                        letter-spacing: 0.6px;
+                        text-align: center;
+                        color: #aca281;">SHOP NOW</div>
+          </a>
+        </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  
+<!--  stay powered product list  -->
+  
+  <div class="grid grid--uniform custom-collection-grid-list" role="list" style="margin-top: 15px; margin-left: 1%; margin-right: 1%">
+    {% for product in collections.electronics-acc.products %}
+      {% if product.tags contains "staypowered" %}
+        <div class="product grid__item medium-up--one-third small--one-half slide-up-animation animated custom-grid-item"
+             style="margin-bottom: 10px; padding-left: 1%; padding-right: 1%"
+             role="listitem">
+<!--           <img width="100%" src={{ product | img_url }}/> -->
+          <a href="{{ product.url | within: collection }}" class=" supports-js product__image-wrapper" title="{{ product.title | escape }}" style="border-bottom: none; margin-bottom: 0">
+            <img src="{{ product.featured_image.src | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}">
+          </a>
+          <div style="background-color: white; padding: 7px; margin-top: -7px;">
+            <div class="product__title">
+              <a href="{{ product.url }}" style="border-bottom: none; padding-bottom:0">{{ product.title }}</a>
+            </div>
+              <div class="product__prices">
+              {% if product.compare_at_price > product.price %}
+
+                <span class="product__price--on-sale" style="color: #aca281;">
+                  {% if product.price_varies %}
+                    {% assign sale_price = product.price | money %}
+                    {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+                  {% else %}
+                    <strong class="visually-hidden">{{ 'products.product.sale_price' | t }}</strong>
+                    <span style="color: #aca281;">{{ product.price | money }}</span>
+                    
+                  {% endif %}
+                </span>
+
+              {% else %}
+                <span class="product__price">
+                  {% if product.price_varies %}
+                    {% assign price = product.price | money %}
+                    {{ 'products.product.from_text_html' | t: price: price }}
+                  {% else %}
+                    <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                    {{ product.price | money }}
+                  {% endif %}
+                </span>
+
+              {% endif %}
+
+              {% if product.compare_at_price > product.price %}
+                <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                <div class="product-single__price--compare" style="font-size:12px; text-decoration: line-through" >Brand Price {{ product.compare_at_price | money }}</div>
+              {% endif %}
+
+              {% if on_sale %}
+          <!--       <span class="badge badge--sale"><span>{{ 'products.product.on_sale' | t }}</span></span> -->
+              {% endif %}
+
+              {% comment %}
+              {% if sold_out %}
+                <span class="badge badge--sold-out"><span>{{ 'products.product.sold_out' | t }}</span></span>
+              {% endif %}
+              {% endcomment %}
+
+              {% if sold_out %}
+                <strong class="sold-out-text">{{ 'products.product.sold_out' | t }}</strong>
+              {% endif %}
+
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  
+<!-- Pamper your smile -->
+  <div id="pamper-your-smile" class="anchor-placeholder"></div>
+  <div class="collection-section-header">PAMPER YOUR SMILE</div>
+  <div class="bedroom-section-container">
+    <img style="margin-bottom: -7px; object-position: 75%;" class="bedroom-section-background-img"src="https://storage.googleapis.com/picksmart-img-au/collection-page/electronics/img-1.png"/>
+    <div class="bedroom-section-text">Great smile often leads to the best first impression. Enter the 21st century of oral hygiene by adding power to your toothbrushes!</div>
+  </div>
+<!--  Pamper your smile product list -->
+    <div class="grid grid--uniform custom-collection-grid-list" role="list" style="margin-top: 15px; margin-left: 1%; margin-right: 1%">
+    {% for product in collections.electronics-acc.products %}
+      {% if product.tags contains "pamperyoursmile" %}
+        <div class="product grid__item medium-up--one-third small--one-half slide-up-animation animated custom-grid-item"
+             style="margin-bottom: 10px; padding-left: 1%; padding-right: 1%"
+             role="listitem">
+<!--           <img width="100%" src={{ product | img_url }}/> -->
+          <a href="{{ product.url | within: collection }}" class=" supports-js product__image-wrapper" title="{{ product.title | escape }}" style="border-bottom: none; margin-bottom: 0">
+            <img src="{{ product.featured_image.src | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}">
+          </a>
+          <div style="background-color: white; padding: 7px; margin-top: -7px;">
+            <div class="product__title">
+              <a href="{{ product.url }}" style="border-bottom: none; padding-bottom:0">{{ product.title }}</a>
+            </div>
+              <div class="product__prices">
+              {% if product.compare_at_price > product.price %}
+
+                <span class="product__price--on-sale" style="color: #aca281;">
+                  {% if product.price_varies %}
+                    {% assign sale_price = product.price | money %}
+                    {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+                  {% else %}
+                    <strong class="visually-hidden">{{ 'products.product.sale_price' | t }}</strong>
+                    <span style="color: #aca281;">{{ product.price | money }}</span>
+                    
+                  {% endif %}
+                </span>
+
+              {% else %}
+                <span class="product__price">
+                  {% if product.price_varies %}
+                    {% assign price = product.price | money %}
+                    {{ 'products.product.from_text_html' | t: price: price }}
+                  {% else %}
+                    <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                    {{ product.price | money }}
+                  {% endif %}
+                </span>
+
+              {% endif %}
+
+              {% if product.compare_at_price > product.price %}
+                <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                <div class="product-single__price--compare" style="font-size:12px; text-decoration: line-through" >Brand Price {{ product.compare_at_price | money }}</div>
+              {% endif %}
+
+              {% if on_sale %}
+          <!--       <span class="badge badge--sale"><span>{{ 'products.product.on_sale' | t }}</span></span> -->
+              {% endif %}
+
+              {% comment %}
+              {% if sold_out %}
+                <span class="badge badge--sold-out"><span>{{ 'products.product.sold_out' | t }}</span></span>
+              {% endif %}
+              {% endcomment %}
+
+              {% if sold_out %}
+                <strong class="sold-out-text">{{ 'products.product.sold_out' | t }}</strong>
+              {% endif %}
+
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  
+  <div class="shop-all-button-container">
+    <a href="https://thepicksmart.com/collections/electronics-acc" class="shop-all-button">SHOP ALL</a>
+  </div>
+</div>

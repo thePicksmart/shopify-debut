@@ -1,0 +1,234 @@
+<!-- HAPPINESS IS HOME MADE -->
+  <div id="happiness-is-home-made" class="anchor-placeholder"></div>
+  <div class="collection-section-header">HAPPINESS IS HOME MADE</div>
+<!--   <a href="https://thepicksmart.com/collections/kitchen/products/5-5-l-tilt-head-stand-mixer-standard-set" class="kitchen-section-text-2 product__image-wrapper" >
+    <div class="kitchen-section-text-2-text">Nothing says home like the smell of baking. But baking isn’t the easiest job especially if you are a new home cook.</div>
+    <div class="kitchen-section-text-2-price">
+    {% for product in collections.kitchen.products %}
+      {% if product.tags contains "mixer" %}
+      <div>
+        <div class="product__title">
+          <div href="{{ product.url }}" style="color: #6e664a; font-size: 13px">{{ product.title }}</div>
+        </div>
+        <div class="product__prices">
+          {% if product.compare_at_price > product.price %}
+
+          <span class="product__price--on-sale" style="color: #aca281;">
+            {% if product.price_varies %}
+            {% assign sale_price = product.price | money %}
+            {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+            {% else %}
+            <strong class="visually-hidden">{{ 'products.product.sale_price' | t }}</strong>
+            <span style="color: #333; font-size: 16px; font-family: helvetica;">{{ product.price | money }}</span>
+
+            {% endif %}
+          </span>
+
+          {% else %}
+          <span class="product__price">
+            {% if product.price_varies %}
+            {% assign price = product.price | money %}
+            {{ 'products.product.from_text_html' | t: price: price }}
+            {% else %}
+            <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+            {{ product.price | money }}
+            {% endif %}
+          </span>
+
+          {% endif %}
+
+          {% if product.compare_at_price > product.price %}
+          <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+          <div class="product-single__price--compare" style="font-size:12px; text-decoration: line-through">Brand Price {{ product.compare_at_price | money }}</div>
+          {% endif %}
+
+          {% if on_sale %}
+          {% endif %}
+
+          {% comment %}
+          {% if sold_out %}
+          <span class="badge badge--sold-out"><span>{{ 'products.product.sold_out' | t }}</span></span>
+          {% endif %}
+          {% endcomment %}
+
+          {% if sold_out %}
+          <strong class="sold-out-text">{{ 'products.product.sold_out' | t }}</strong>
+          {% endif %}
+
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+    <img class="kitchen-section-text-2-img" src="https://storage.googleapis.com/picksmart-img-au/collection-page/kitchen/item-5-5l-mixer.png"/>
+  </a>
+  
+  <div class="grid grid--uniform custom-collection-grid-list" role="list" style="margin-top: 15px; margin-left: 1%; margin-right: 1%">
+    <div>
+      {% for product in collections.kitchen.products %}
+      {% if product.tags contains "handmixer" %}
+        <div class="product grid__item medium-up--one-third small--one-half slide-up-animation animated custom-grid-item"
+             style="margin-bottom: 10px; padding-left: 1%; padding-right: 1%"
+             role="listitem">
+          <a href="{{ product.url | within: collection }}" class=" supports-js product__image-wrapper" title="{{ product.title | escape }}" style="border-bottom: none; margin-bottom: 0">
+            <img src="{{ product.featured_image.src | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}">
+          </a>
+          <div style="background-color: white; padding: 7px; margin-top: -7px;">
+            <div class="product__title">
+              <a href="{{ product.url }}" style="border-bottom: none; padding-bottom:0">{{ product.title }}</a>
+            </div>
+              <div class="product__prices">
+              {% if product.compare_at_price > product.price %}
+
+                <span class="product__price--on-sale">
+                  {% if product.price_varies %}
+                    {% assign sale_price = product.price | money %}
+                    {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+                  {% else %}
+                    <strong class="visually-hidden">{{ 'products.product.sale_price' | t }}</strong>
+                    <span style="color: #aca281;">{{ product.price | money }}</span>
+                    
+                  {% endif %}
+                </span>
+
+              {% else %}
+                <span class="product__price">
+                  {% if product.price_varies %}
+                    {% assign price = product.price | money %}
+                    {{ 'products.product.from_text_html' | t: price: price }}
+                  {% else %}
+                    <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                    {{ product.price | money }}
+                  {% endif %}
+                </span>
+
+              {% endif %}
+
+              {% if product.compare_at_price > product.price %}
+                <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                <div class="product-single__price--compare" style="font-size:12px; text-decoration: line-through">Brand Price {{ product.compare_at_price | money }}</div>
+              {% endif %}
+
+              {% if on_sale %}
+              {% endif %}
+
+              {% comment %}
+              {% if sold_out %}
+                <span class="badge badge--sold-out"><span>{{ 'products.product.sold_out' | t }}</span></span>
+              {% endif %}
+              {% endcomment %}
+
+              {% if sold_out %}
+                <strong class="sold-out-text">{{ 'products.product.sold_out' | t }}</strong>
+              {% endif %}
+
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    
+    <div class="product grid__item medium-up--one-third small--one-half slide-up-animation animated custom-grid-item"
+         style="margin-bottom: 10px; padding-left: 1%; padding-right: 1%"
+         role="listitem">
+      <a href="https://thepicksmart.com/collections/kitchen" class="kitchen-background-img-5" style="border-bottom: 0">
+        <div class="kitchen-background-img-5-layer">
+          <div style="color: white; font-size: 14px; border-bottom: 2px solid white; padding-bottom: 5px; width: 124px; margin: 0 auto;">View More<br/>Mixer Attachments</div>
+        </div>
+      </a>
+    </div>
+  </div> -->
+
+
+  <div class="bedroom-section-container">
+    <img style="margin-bottom: -7px; object-position: 35%;" class="bedroom-section-background-img" src="https://storage.googleapis.com/picksmart-img-au/collection-page/kitchen/happiness-is-home-made.png"/>
+    <div class="bedroom-section-text">Nothing says home like the smell of baking. But baking isn't the easiest job especially if you are a new home cook. Take your baking projects to another level with Thepicksmart's HAPPINESS IS HOME MADE collection. A quick batch of crunchy homemade cookies, gooey chewy brownies and divine cupcakes are not just in your dreams.</div>
+  </div>
+
+  <figure style="margin: 0px">
+    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/ywYloUaQmIo?rel=0" frameborder="0" allowfullscreen=""></iframe>
+  </figure>
+  
+  
+  <div class="grid grid--uniform custom-collection-grid-list" role="list" style="margin-top: 15px; margin-left: 1%; margin-right: 1%">
+<!--     <div class="product grid__item medium-up--one-third small--one-half slide-up-animation animated custom-grid-item kitchen-background-img-6"
+         role="listitem">
+      <div style="background-color: white; text-align: center; width: 90%; height: 90%; display: flex; justify-content: center; align-items: center; ">
+        <div style="font-weight: 300; font-size: 12px; padding: 7px; line-height: normal; color: #817e74">A quick batch of crunchy homemade cookies, gooey chewy brownies and divine cupcakes are not just in your dreams.</div>
+      </div>
+    </div> -->
+    {% for product in collections.kitchen.products %}
+    {% if product.tags contains "homemade" %}
+    <div class="product grid__item medium-up--one-third small--one-half slide-up-animation animated custom-grid-item"
+         style="margin-bottom: 10px; padding-left: 1%; padding-right: 1%"
+         role="listitem">
+      <!--           <img width="100%" src={{ product | img_url }}/> -->
+      <a href="{{ product.url | within: collection }}" class=" supports-js product__image-wrapper" title="{{ product.title | escape }}" style="border-bottom: none; margin-bottom: 0">
+        <img src="{{ product.featured_image.src | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}">
+      </a>
+      <div style="background-color: white; padding: 7px; margin-top: -7px;">
+        <div class="product__title">
+          <a href="{{ product.url }}" style="border-bottom: none; padding-bottom:0">{{ product.title }}</a>
+        </div>
+        <div class="product__prices">
+          {% if product.compare_at_price > product.price %}
+
+          <span class="product__price--on-sale">
+            {% if product.price_varies %}
+            {% assign sale_price = product.price | money %}
+            {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+            {% else %}
+            <strong class="visually-hidden">{{ 'products.product.sale_price' | t }}</strong>
+            <span style="color: #aca281;">{{ product.price | money }}</span>
+
+            {% endif %}
+          </span>
+
+          {% else %}
+          <span class="product__price">
+            {% if product.price_varies %}
+            {% assign price = product.price | money %}
+            {{ 'products.product.from_text_html' | t: price: price }}
+            {% else %}
+            <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+            {{ product.price | money }}
+            {% endif %}
+          </span>
+
+          {% endif %}
+
+          {% if product.compare_at_price > product.price %}
+          <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+          <div class="product-single__price--compare" style="font-size:12px; text-decoration: line-through">Brand Price {{ product.compare_at_price | money }}</div>
+          {% endif %}
+
+          {% if on_sale %}
+          <!--       <span class="badge badge--sale"><span>{{ 'products.product.on_sale' | t }}</span></span> -->
+          {% endif %}
+
+          {% comment %}
+          {% if sold_out %}
+          <span class="badge badge--sold-out"><span>{{ 'products.product.sold_out' | t }}</span></span>
+          {% endif %}
+          {% endcomment %}
+
+          {% if sold_out %}
+          <strong class="sold-out-text">{{ 'products.product.sold_out' | t }}</strong>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+        <div class="product grid__item medium-up--one-third small--one-half slide-up-animation animated custom-grid-item"
+         style="margin-bottom: 10px; padding-left: 1%; padding-right: 1%"
+         role="listitem">
+      <a href="https://thepicksmart.com/collections/kitchen" class="kitchen-background-img-5" style="border-bottom: 0">
+        <div class="kitchen-background-img-5-layer">
+          <div style="color: white; font-size: 14px; border-bottom: 2px solid white; padding-bottom: 5px; width: 124px; margin: 0 auto;">View More<br/>Mixer Attachments</div>
+        </div>
+      </a>
+    </div>
+  </div>

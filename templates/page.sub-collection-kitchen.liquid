@@ -1,0 +1,60 @@
+<!-- /templates/page.liquid -->
+<!-- <h1 class="small--text-center">{{ page.title }}</h1> -->
+
+<div class="rte collection-wrapper">
+  {{ page.content }}
+  
+  {% include 'subcollection-kitchen-keepem-brewing' %}
+  
+  {% include 'subcollection-kitchen-happiness-is-home-made' %}
+  
+  {% include 'subcollection-kitchen-heart-warming-kitchen' %}
+  
+  {% include 'subcollection-kitchen-your-culinary-dreams-are-shining' %}
+
+  <div class="shop-all-button-container">
+    <a href="https://thepicksmart.com/collections/kitchen" class="shop-all-button">SHOP ALL</a>
+  </div>
+</div>
+
+<script>
+// document.addEventListener("DOMContentLoaded", function() {
+//   var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));;
+
+//   if ("IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
+//     let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+//       entries.forEach(function(entry) {
+//         if (entry.isIntersecting) {
+//           let lazyImage = entry.target;
+//           lazyImage.src = lazyImage.dataset.src;
+//           lazyImage.srcset = lazyImage.dataset.srcset;
+//           lazyImage.classList.remove("lazy");
+//           lazyImageObserver.unobserve(lazyImage);
+//         }
+//       });
+//     });
+
+//     lazyImages.forEach(function(lazyImage) {
+//       lazyImageObserver.observe(lazyImage);
+//     });
+//   }
+// });
+// document.addEventListener("DOMContentLoaded", function() {
+//   var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+
+//   if ("IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
+//     let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+//       entries.forEach(function(entry) {
+//         if (entry.isIntersecting) {
+//           entry.target.classList.add("visible");
+//           lazyBackgroundObserver.unobserve(entry.target);
+//         }
+//       });
+//     });
+
+//     lazyBackgrounds.forEach(function(lazyBackground) {
+//       lazyBackgroundObserver.observe(lazyBackground);
+//     });
+//   }
+// });
+</script>

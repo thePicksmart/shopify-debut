@@ -1,0 +1,142 @@
+<div class="wrapper" style="margin-left: 10px">
+  <div class="home-scrolls">
+    <a class="home-swiper-card swiper-card" href="{{ section.settings.button_link_1 }}#{{ section.settings.anchor_1 }}">
+      <img class="home-swiper-img" src="{{ section.settings.image | img_url: '300x300' }}" />
+      <div class="swiper-text">
+        <div class="home-swiper-title">{{ section.settings.sub_collection_1 | escape }}</div>
+        <div class="home-swiper-title home-swiper-subtitle">{{ section.settings.subheading_1 }}</div>
+      </div>
+      <div class="swiper-btn">{{ section.settings.button_label_1 | escape }}</div>
+    </a>
+    <a class="home-swiper-card swiper-card" href="{{ section.settings.button_link_2 }}#{{ section.settings.anchor_2 }}">
+      <img class="home-swiper-img" src="{{ section.settings.imageb | img_url: '300x300' }}" />
+      <div class="swiper-text">
+        <div class="home-swiper-title">{{ section.settings.sub_collection_2 | escape }}</div>
+        <div class="home-swiper-title home-swiper-subtitle">{{ section.settings.subheading_2 }}</div>
+      </div>
+      <div class="swiper-btn">{{ section.settings.button_label_2 | escape }}</div>
+    </a> 
+    <a class="home-swiper-card swiper-card" href="{{ section.settings.button_link_3 }}#{{ section.settings.anchor_3 }}">
+      <img class="home-swiper-img" src="{{ section.settings.imagec | img_url: '300x300' }}" />
+      <div class="swiper-text">
+        <div class="home-swiper-title">{{ section.settings.sub_collection_3 | escape }}</div>
+        <div class="home-swiper-title home-swiper-subtitle">{{ section.settings.subheading_3 }}</div>
+      </div>
+      <div class="swiper-btn">{{ section.settings.button_label_3 | escape }}</div>
+    </a>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image Swiper",
+    "class": "index-section show-on-mobile index-section-no-bottom-padding",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image 1"
+      },
+      {
+        "type": "text",
+        "id": "sub_collection_1",
+        "label": "Sub Collection 1",
+        "default": "The Cozy Layer"
+      },
+      {
+        "type": "text",
+        "id": "subheading_1",
+        "label": "Subheading 1",
+        "default": "From Chanel Designated Manufacturer"
+      },
+      {
+        "type": "text",
+        "id": "button_label_1",
+        "label": "Button",
+		"default": "Shop"
+      },
+      {
+        "type": "url",
+        "id": "button_link_1",
+        "label": "Button link 1"
+      },
+      {
+        "type": "text",
+        "id": "anchor_1",
+        "label": "Anchor link 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "imageb",
+        "label": "Image 2"
+      },
+      {
+        "type": "text",
+        "id": "sub_collection_2",
+        "label": "Sub Collection 2",
+        "default": "The Cozy Layer"
+      },
+      {
+        "type": "text",
+        "id": "subheading_2",
+        "label": "Subheading 2",
+        "default": "From WMF Designated Manufacturer"
+      },
+      {
+        "type": "text",
+        "id": "button_label_2",
+        "label": "Button",
+		"default": "Shop"
+      },
+      {
+        "type": "url",
+        "id": "button_link_2",
+        "label": "Button link 2"
+      },
+      {
+        "type": "text",
+        "id": "anchor_2",
+        "label": "Anchor link 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "imagec",
+        "label": "Image 3"
+      },
+      {
+        "type": "text",
+        "id": "sub_collection_3",
+        "label": "Sub Collection 3",
+        "default": "The Cozy Layer"
+      },
+      {
+        "type": "text",
+        "id": "subheading_3",
+        "label": "Subheading 3",
+        "default": "From WMF Designated Manufacturer"
+      },
+      {
+        "type": "text",
+        "id": "button_label_3",
+        "label": "Button",
+		"default": "Shop"
+      },
+      {
+        "type": "url",
+        "id": "button_link_3",
+        "label": "Button link 3"
+      },
+      {
+        "type": "text",
+        "id": "anchor_3",
+        "label": "Anchor link 3"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image Swiper",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}

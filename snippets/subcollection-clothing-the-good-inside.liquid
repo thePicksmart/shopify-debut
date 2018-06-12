@@ -1,0 +1,228 @@
+<!--  THE GOOD INSIDE  -->
+  <div id="the-good-inside" class="anchor-placeholder"></div>
+  <div class="collection-section-header">THE GOOD INSIDE</div>
+  <div class="clothing-section-2-container">
+    <img class="clothing-background-img-2" src="https://storage.googleapis.com/picksmart-img-au/collection-page/clothing/img-2.png"/>
+    <div class="clothing-background-img-3-container">
+      <img style="width: 70%; margin: 25px 0" src="https://storage.googleapis.com/picksmart-img-au/collection-page/clothing/img-3.png"/>
+      <div style="color: white;
+                  line-height: 1.05;
+                  letter-spacing: 0.5px;
+                  font-size: 12px;
+                  text-align: left;
+                  padding: 0 15px;
+                  padding-bottom: 15px;">Life is too short to wear mediocre underwear. You must choose the best set of intimates as it’s something you wear every day. Confidence comes from within. Shop sexy yet comfy bras, panties and sleepwear made with quality.</div>
+      {% for product in collections.clothing-accessories.products %}
+      {% if product.tags contains "goodinsidefeaturetop" %}
+      <div class="kitchen-item-text-2 clothing-item-text-1 clothing-section-2-feature">
+        <div class="product__title" >
+          <div class="collection-feature-product-title">{{ product.title }}</div>
+        </div>
+        <div class="product__prices">
+          {% if product.compare_at_price > product.price %}
+
+          <span class="product__price--on-sale" >
+            {% if product.price_varies %}
+            {% assign sale_price = product.price | money %}
+            {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+            {% else %}
+            <strong class="visually-hidden">{{ 'products.product.sale_price' | t }}</strong>
+            <span style="color: #333; font-size: 16px; font-family: helvetica;">{{ product.price | money }}</span>
+
+            {% endif %}
+          </span>
+
+          {% else %}
+          <span class="product__price">
+            {% if product.price_varies %}
+            {% assign price = product.price | money %}
+            {{ 'products.product.from_text_html' | t: price: price }}
+            {% else %}
+            <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+            {{ product.price | money }}
+            {% endif %}
+          </span>
+
+          {% endif %}
+
+          {% if product.compare_at_price > product.price %}
+          <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+          <span class="product-single__price--compare" style="font-size:12px; text-decoration: line-through;">Brand Price {{ product.compare_at_price | money }}</span>
+          {% endif %}
+
+          {% if on_sale %}
+          <!--       <span class="badge badge--sale"><span>{{ 'products.product.on_sale' | t }}</span></span> -->
+          {% endif %}
+
+          {% comment %}
+          {% if sold_out %}
+          <span class="badge badge--sold-out"><span>{{ 'products.product.sold_out' | t }}</span></span>
+          {% endif %}
+          {% endcomment %}
+
+          {% if sold_out %}
+          <strong class="sold-out-text">{{ 'products.product.sold_out' | t }}</strong>
+          {% endif %}
+
+        </div>
+        <a href="https://thepicksmart.com/collections/clothing-accessories/products/sheer-lace-chemise"
+           style="border-radius: 2px;
+                  background-color: #f5f3ef;
+                  border: solid 1px #aca281;
+                  padding: 10px;
+                  display: block">
+          <div style="line-height: normal;
+                      letter-spacing: 0.6px;
+                      text-align: center;
+                      color: #aca281;">SHOP NOW</div>
+        </a>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+
+  <div class="clothing-feature" style="background-color: #c7c0aa;">
+    <div style="border-radius: 12px;
+                background-color: #ffffff;
+                box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.23);
+                position: relative;">
+      <img class="clothing-feature-img clothing-feature-img-2" src="https://storage.googleapis.com/picksmart-img-au/collection-page/clothing/item-lace-bra.png" />
+      {% for product in collections.clothing-accessories.products %}
+      {% if product.tags contains "goodinsidefeature" %}
+        <div class="kitchen-item-text-2 clothing-item-text-1 clothing-item-text-2">
+          <div class="product__title" >
+            <div class="collection-feature-product-title">{{ product.title }}</div>
+          </div>
+          <div class="product__prices">
+            {% if product.compare_at_price > product.price %}
+
+            <span class="product__price--on-sale">
+              {% if product.price_varies %}
+              {% assign sale_price = product.price | money %}
+              {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+              {% else %}
+              <strong class="visually-hidden">{{ 'products.product.sale_price' | t }}</strong>
+              <span style="color: #333; font-size: 16px; font-family: helvetica;">{{ product.price | money }}</span>
+
+              {% endif %}
+            </span>
+
+            {% else %}
+            <span class="product__price">
+              {% if product.price_varies %}
+              {% assign price = product.price | money %}
+              {{ 'products.product.from_text_html' | t: price: price }}
+              {% else %}
+              <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+              {{ product.price | money }}
+              {% endif %}
+            </span>
+
+            {% endif %}
+
+            {% if product.compare_at_price > product.price %}
+            <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+            <span class="product-single__price--compare" style="font-size:12px; text-decoration: line-through;">Brand Price {{ product.compare_at_price | money }}</span>
+            {% endif %}
+
+            {% if on_sale %}
+            <!--       <span class="badge badge--sale"><span>{{ 'products.product.on_sale' | t }}</span></span> -->
+            {% endif %}
+
+            {% comment %}
+            {% if sold_out %}
+            <span class="badge badge--sold-out"><span>{{ 'products.product.sold_out' | t }}</span></span>
+            {% endif %}
+            {% endcomment %}
+
+            {% if sold_out %}
+            <strong class="sold-out-text">{{ 'products.product.sold_out' | t }}</strong>
+            {% endif %}
+
+          </div>
+          <a href="https://thepicksmart.com/collections/clothing-accessories/products/scalloped-lace-bra-and-panty-set"
+             style="border-radius: 2px;
+                    background-color: #f5f3ef;
+                    border: solid 1px #aca281;
+                    padding: 10px;
+                    display: block">
+            <div style="line-height: normal;
+                        letter-spacing: 0.6px;
+                        text-align: center;
+                        color: #aca281;">SHOP NOW</div>
+          </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+  </div>
+  
+<!--  THE GOOD INSIDE PRODUCTS LIST  -->
+  <div class="grid grid--uniform custom-collection-grid-list" role="list" style="margin-top: 15px; margin-left: 1%; margin-right: 1%">
+    {% for product in collections.clothing-accessories.products %}
+      {% if product.tags contains "goodinside" %}
+        <div class="product grid__item medium-up--one-third small--one-half slide-up-animation animated custom-grid-item"
+             style="margin-bottom: 10px; padding-left: 1%; padding-right: 1%"
+             role="listitem">
+<!--           <img width="100%" src={{ product | img_url }}/> -->
+          <a href="{{ product.url | within: collection }}" class=" supports-js product__image-wrapper" title="{{ product.title | escape }}" style="border-bottom: none; margin-bottom: 0">
+            <img src="{{ product.featured_image.src | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}">
+          </a>
+          <div style="background-color: white; padding: 7px; margin-top: -7px">
+            <div class="product__title">
+              <a href="{{ product.url }}" style="border-bottom: none; padding-bottom:0">{{ product.title }}</a>
+            </div>
+              <div class="product__prices">
+              {% if product.compare_at_price > product.price %}
+
+                <span class="product__price--on-sale" style="color: #aca281;">
+                  {% if product.price_varies %}
+                    {% assign sale_price = product.price | money %}
+                    {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+                  {% else %}
+                    <strong class="visually-hidden">{{ 'products.product.sale_price' | t }}</strong>
+                    <span style="color: #aca281;">{{ product.price | money }}</span>
+                    
+                  {% endif %}
+                </span>
+
+              {% else %}
+                <span class="product__price">
+                  {% if product.price_varies %}
+                    {% assign price = product.price | money %}
+                    {{ 'products.product.from_text_html' | t: price: price }}
+                  {% else %}
+                    <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                    {{ product.price | money }}
+                  {% endif %}
+                </span>
+
+              {% endif %}
+
+              {% if product.compare_at_price > product.price %}
+                <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+                <div class="product-single__price--compare" style="font-size:12px; text-decoration: line-through" >Brand Price {{ product.compare_at_price | money }}</div>
+              {% endif %}
+
+              {% if on_sale %}
+          <!--       <span class="badge badge--sale"><span>{{ 'products.product.on_sale' | t }}</span></span> -->
+              {% endif %}
+
+              {% comment %}
+              {% if sold_out %}
+                <span class="badge badge--sold-out"><span>{{ 'products.product.sold_out' | t }}</span></span>
+              {% endif %}
+              {% endcomment %}
+
+              {% if sold_out %}
+                <strong class="sold-out-text">{{ 'products.product.sold_out' | t }}</strong>
+              {% endif %}
+
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
