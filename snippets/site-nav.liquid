@@ -63,28 +63,3 @@
     {% endif %}
   {% endfor %}
 </ul>
-
-<script>
-  $(document).ready(function(){
-    if (window.location.href == 'https://thepicksmart.com/') {
-      $('.site-nav__link--main').addClass('header-menu-text');
-    }
-    $(window).bind('scroll', function() {
-      var distance = 5;
-      if ($(window).scrollTop() > distance) {
-        $('.site-nav__link--main').addClass('text-scrolled');
-        $('.icon-cong').removeClass('icon-white')
-      }
-      else {
-        $('.site-nav__link--main').removeClass('text-scrolled');
-        
-        if (window.location.href == 'https://thepicksmart.com/') {
-          $('.icon-cong').addClass('icon-white')
-        } else {
-//           $('#header-wrapper').addClass('header-background-white')
-        }
-        
-      }
-    });
-  });
-</script>
