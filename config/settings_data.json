@@ -23,10 +23,10 @@
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
-    "social_twitter_link": "",
-    "social_facebook_link": "",
-    "social_pinterest_link": "",
-    "social_instagram_link": "",
+    "social_twitter_link": "https:\/\/twitter.com\/thepicksmart",
+    "social_facebook_link": "https:\/\/www.facebook.com\/Thepicksmart\/",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/thepicksmart\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/thepicksmart\/",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
     "social_youtube_link": "",
@@ -80,7 +80,7 @@
         "settings": {
           "layout": "grid",
           "grid": "3",
-          "rows": "8",
+          "rows": "20",
           "show_collection_image": true,
           "show_vendor": false,
           "sort_enable": false,
@@ -234,7 +234,7 @@
           "1526883464907": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"home-entrance-container\">\n          <div class=\"entrance-item entrance-inspiration\">\n            <div class=\"entrance-shade\"><\/div>\n            <img class=\"entrance-img\" src=\"https:\/\/storage.googleapis.com\/reqo-images-europe-west1\/product\/coral-velvet-blanket\/Coral-velvet-blanket-f6.png\">\n            <div class=\"entrance-text-on-img\">\n              <h2 class=\"h1 mega-title entrance-text entrance-text-inspirations\">Pick Smart. Live Smart.<\/h2>\n              <a href=\"\/blogs\/tips\" class=\"btn hero__btn\">inspirations<\/a>\n            <\/div>\n          <\/div>\n          <div class=\"entrance-item entrance-our-story\">\n            <div class=\"entrance-shade\"><\/div>\n            <img class=\"entrance-img\" src=\"https:\/\/storage.googleapis.com\/reqo-images-europe-west1\/our-story-temp\/our-story-temp-4.png\">\n            <div class=\"entrance-text-on-img\">\n              <h2 class=\"h1 mega-title entrance-text entrance-text-our-story\">How do we achieve finest quality without premium brand pricing?<\/h2>\n              <a href=\"\/pages\/about\" class=\"btn hero__btn\">our story<\/a>\n            <\/div>\n          <\/div>\n        <\/div>",
+              "code": "<div class=\"home-entrance-container\">\n          <div class=\"entrance-item entrance-inspiration\">\n            <div class=\"entrance-shade\"><\/div>\n            <img class=\"entrance-img\" src=\"https:\/\/storage.googleapis.com\/reqo-images-europe-west1\/product\/coral-velvet-blanket\/Coral-velvet-blanket-f6.png\">\n            <div class=\"entrance-text-on-img\">\n              <h2 class=\"h1 mega-title entrance-text entrance-text-inspirations\">Pick Smart. Live Smart.<\/h2>\n              <a href=\"\/blogs\/tips\" class=\"btn hero__btn\">inspirations<\/a>\n            <\/div>\n          <\/div>\n          <div class=\"entrance-item entrance-our-story\">\n            <div class=\"entrance-shade\"><\/div>\n            <img class=\"entrance-img\" src=\"https:\/\/storage.googleapis.com\/reqo-images-europe-west1\/our-story-temp\/our-story-temp-4.png\">\n            <div class=\"entrance-text-on-img\">\n              <h2 class=\"h1 mega-title entrance-text entrance-text-our-story\">How do we achieve finest quality without premium brand pricing?<\/h2>\n              <a href=\"\/pages\/our-story\" class=\"btn hero__btn\">our story<\/a>\n            <\/div>\n          <\/div>\n        <\/div>",
               "width": "100%"
             }
           }
@@ -323,7 +323,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/5.png",
               "alignment": "top",
-              "collection": "Bedroom",
+              "collection": "Kitchen",
               "title": "YOUR CULINARY  DREAMS ARE SHINING",
               "subheading": "From WMF Designated Manufacturer",
               "button_label": "Shop",
@@ -336,7 +336,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/4.png",
               "alignment": "center",
-              "collection": "Bedroom",
+              "collection": "Décor",
               "title": "The Cozy Layer",
               "subheading": "From Williams-Sonoma Designated Manufacturer",
               "button_label": "Shop",
@@ -423,7 +423,7 @@
               "subheading": "",
               "link": "",
               "button_label": "Discover",
-              "button_link": "shopify:\/\/pages\/about"
+              "button_link": "shopify:\/\/pages\/our-story"
             }
           },
           "1528252419345": {

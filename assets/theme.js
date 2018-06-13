@@ -3000,20 +3000,92 @@ let checkCurrencySwitcher = setInterval(function () {
   }
 }, 100)
 
+// let checkCurrencySwitcher = setInterval(function () {
+//   if($('.doubly-float').length) {
+// //     $('.doubly-float').css('right', '50px')
+// //     $('.doubly-float').css('left', 'auto')
+// //     $('.doubly-float').css('top', '85px')
+// //     $('.doubly-float').css('bottom', 'auto')
+//     $('.doubly-float').addClass('currency-converter-float-custom')
+//     $('.doubly-float').addClass('custom-currency-wrapper')
+//     $('select.currency-switcher').addClass('currency-add-on')
+//     if (window.location.href == 'https://thepicksmart.com/') {
+//       $('.doubly-float').addClass('currency-converter-float-custom-home')
+//       $('.doubly-float select').addClass('custom-currency-wrapper-text')
+//       $(window).bind('scroll', function() {
+//         var distance = 5;
+//         if ($(window).scrollTop() > distance) {
+//           $('.doubly-float select').removeClass('custom-currency-wrapper-text')
+//         }
+//         else {
+//           $('.doubly-float select').addClass('custom-currency-wrapper-text')
+//         }
+//       });
+//     }
+//   }
+//   if($('.currency-switcher').length){
+//     $('.current .flags').addClass('hidden')
+//   }
+//   if($('.currency-switcher').length) {
+//     clearInterval(checkCurrencySwitcher)
+//   }
+// }, 100)
 
 $(document).ready(function() {
-  if (window.location.href == 'https://thepicksmart.com/') {
+  var route = window.location.href;
+  var homeRoute = 'https://thepicksmart.com/';
+  var storyRoute = 'https://thepicksmart.com/pages/our-story';
+  if (route == homeRoute) {
+    // search drawer
 	$('#SearchDrawer').css('margin-top', '45px')
+    
+    //header navbar
+    $('#header-wrapper').removeClass('header-background-white');
+    $('.mobile-nav-wrapper').css('margin-top', '41px');
+    $('.icon-cong').addClass('icon-white');
+    $(window).bind('scroll', function() {
+      var distance = 5;
+      if ($(window).scrollTop() > distance) {
+        $('#header-wrapper').addClass('header-background-white');
+      }
+      else {
+        $('#header-wrapper').removeClass('header-background-white');
+      }
+    });
+    
+    //header navbar text
+    $('.site-nav__link--main').addClass('header-menu-text');
+  } else if (route == storyRoute) {
+    $('#header-wrapper').removeClass('header-background-white');
+    $('.icon-cong').addClass('icon-white');
+  } else {
+    $('#header-wrapper').addClass('header-add-on');
   }
-})
+  
 
-$.fn.scrollView = function () {
-  return this.each(function () {
-    $('html, body').animate({
-      scrollTop: $(this).offset().top
-    }, 1000);
+  
+  
+  $(window).bind('scroll', function() {
+    var distance = 5;
+    if ($(window).scrollTop() > distance) {
+      $('#header-wrapper').addClass('scrolled');
+      $('.site-nav__link--main').addClass('text-scrolled');
+      $('.icon-cong').removeClass('icon-white')
+    }
+    else {
+      $('#header-wrapper').removeClass('scrolled');
+      $('.site-nav__link--main').removeClass('text-scrolled');
+
+      if (route == homeRoute) {
+        $('.icon-cong').addClass('icon-white')
+      } else if(route == storyRoute) {
+        $('.icon-cong').addClass('icon-white')
+      } else {
+        $('#header-wrapper').addClass('header-background-white')
+      }
+    }
   });
-}
+})
 
 // ============= End of custom js ===============
 

@@ -278,38 +278,6 @@
   {% endif %}
 </div>
 
-<script>
-  $(document).ready(function(){
-    if (window.location.href == 'https://thepicksmart.com/') {
-
-      $('#header-wrapper').removeClass('header-background-white');
-      $('.mobile-nav-wrapper').css('margin-top', '41px');
-      $('.icon-cong').addClass('icon-white');
-      $(window).bind('scroll', function() {
-        var distance = 5;
-        if ($(window).scrollTop() > distance) {
-          $('#header-wrapper').addClass('header-background-white');
-//           $('#shopify-section-1522035897993').scrollView();
-        }
-        else {
-          $('#header-wrapper').removeClass('header-background-white');
-//           $('#PageContainer').scrollView();
-        }
-      });
-    } else {
-      $('#header-wrapper').addClass('header-add-on');
-    }
-    $(window).bind('scroll', function() {
-      var distance = 5;
-      if ($(window).scrollTop() > distance) {
-        $('#header-wrapper').addClass('scrolled');
-      }
-      else {
-        $('#header-wrapper').removeClass('scrolled');
-      }
-    });
-  });
-</script>
 
 {% schema %}
   {
