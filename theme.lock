@@ -429,6 +429,8 @@ snippets/subcollection-bedroom-the-hotel-like-bedroom.liquid:
 snippets/subcollection-bedroom-the-modern-groomer.liquid:
   development: 2018-06-13T19:53:15+10:00   c30b5ddae4ed2881697a9e848d3d28db
   production: 2018-06-13T18:50:30+10:00   c30b5ddae4ed2881697a9e848d3d28db
+snippets/subcollection-bedroom-walking-on-the-clouds.liquid:
+  development: 2018-06-14T19:55:13+10:00   8cee1eb8cef1a769fcb94316f3352a2e
 snippets/subcollection-bedroom-zen-home.liquid:
   development: 2018-06-13T19:53:16+10:00   f71f404540ff947133852e298323875f
   production: 2018-06-13T18:50:30+10:00   f71f404540ff947133852e298323875f
@@ -571,7 +573,7 @@ templates/page.pagefly.14219444266.liquid:
   development: 2018-06-13T19:53:17+10:00   864309e96127f85182ef2292a4e7cf93
   production: 2018-06-13T18:50:32+10:00   864309e96127f85182ef2292a4e7cf93
 templates/page.sub-collection-bedroom.liquid:
-  development: 2018-06-13T19:53:17+10:00   c62d5022949e3acee126487a620f53e9
+  development: 2018-06-14T19:51:02+10:00   aace04c9f0604895ac38c6a88aa62359
   production: 2018-06-13T18:50:32+10:00   c62d5022949e3acee126487a620f53e9
 templates/page.sub-collection-clothing.liquid:
   development: 2018-06-13T19:53:17+10:00   e84d8e94c6b308ff2c2f391d2996197d
