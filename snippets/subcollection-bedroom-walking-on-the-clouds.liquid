@@ -1,0 +1,17 @@
+<!--  WALKING ON THE CLOUDS  -->
+<!--   <div id="walking-on-the-clouds" class="anchor-placeholder"></div> -->
+<div class="collection-section-header">WALKING ON THE CLOUDS</div>
+<div class="bedroom-section-container">
+  <img style="margin-bottom: -7px;" class="bedroom-section-background-img hide-on-mobile" src="https://storage.googleapis.com/picksmart-img-au/collection-page/bedroom/walking-on-the-clouds-pc.png"/>
+  <img style="margin-bottom: -7px;" class="bedroom-section-background-img show-on-mobile" src="https://storage.googleapis.com/picksmart-img-au/collection-page/bedroom/walking-on-the-clouds-m.png"/>
+  <div class="subsection-section-text subsection-section-text-top">Looking to add a touch of style to your living room or bed room? Shop rugs in cutting edge design with beautiful colors; a treat for your feet, a treat for your home.</div>
+</div>
+ 
+<!-- WALKING ON THE CLOUDS LIST  -->
+<div class="grid grid--uniform custom-collection-grid-list" role="list" style="margin-top: 15px; margin-left: 1%; margin-right: 1%">
+  {% for product in collections.bedroom.products %}
+  {% if product.tags contains "rugs" %}
+  {% include 'product-card-grid-new-collection-page' %}
+  {% endif %}
+  {% endfor %}
+</div>

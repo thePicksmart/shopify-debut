@@ -426,15 +426,15 @@
               "button_link": "shopify:\/\/pages\/our-story"
             }
           },
-          "1528252419345": {
+          "1528963763907": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/2_8f8a0d0b-3324-4cec-a9a4-e01884f843ab.png",
-              "image_mobile": "shopify:\/\/shop_images\/banner-3_b788c1ad-fc3e-4d46-beaf-ca696f21db49.png",
-              "alignment": "center",
+              "image": "shopify:\/\/shop_images\/3_2_dea33267-e454-402b-939f-ec7e9a82dec0.png",
+              "image_mobile": "shopify:\/\/shop_images\/20_7246e88f-ffbf-428e-accc-24e99e6f29fd.png",
+              "alignment": "top",
               "title": "",
               "subheading": "",
-              "link": "shopify:\/\/pages\/kitchen-collection",
+              "link": "",
               "button_label": "",
               "button_link": ""
             }
@@ -464,13 +464,27 @@
               "button_label": "",
               "button_link": ""
             }
+          },
+          "1528970436083": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/youhui.png",
+              "image_mobile": "shopify:\/\/shop_images\/17.png",
+              "alignment": "top",
+              "title": "",
+              "subheading": "",
+              "link": "",
+              "button_label": "",
+              "button_link": ""
+            }
           }
         },
         "block_order": [
           "1527846145098-0",
-          "1528252419345",
+          "1528963763907",
           "1528252432789",
-          "1528252439426"
+          "1528252439426",
+          "1528970436083"
         ],
         "settings": {
           "autoplay": false,
