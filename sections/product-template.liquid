@@ -102,7 +102,7 @@
         <img src="{{ featured_image | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_image.alt }}" id="FeaturedImage-{{ section.id }}" class="product-featured-img" style="max-width: {{ height }}px;">
       </noscript>
       
-      <div class="show-on-mobile">
+      <div class="show-on-mobile {% if product.images.size < 5 %} thumbnail-list-container {% endif %}">
         {% if product.images.size > 1 %}
           {% if product.images.size > 3 %}
             {%- assign enable_thumbnail_slides = true -%}
@@ -287,6 +287,16 @@
     {{ product | json }}
   </script>
 {% endunless %}
+
+<script>
+  $(document).ready(function() {
+    var checkFactoryImg = $('.factory-container').is(':empty')
+    console.log('check factory img: ', checkFactoryImg) 
+    if(checkFactoryImg) {
+      $('.factory-container').hide();
+    }
+  })
+</script>
 
 {% schema %}
   {
