@@ -852,17 +852,18 @@ theme.Header = (function() {
   function init() {
     cacheSelectors();
 
-    cache.$parents.on('click.siteNav', function(evt) {
-      var $el = $(this);
+    // comment to prevent click to show menu dropdown
+    // cache.$parents.on('click.siteNav', function(evt) {
+    //   var $el = $(this);
 
-      if (!$el.hasClass(config.activeClass)) {
-        // force stop the click from happening
-        evt.preventDefault();
-        evt.stopImmediatePropagation();
-      }
+    //   if (!$el.hasClass(config.activeClass)) {
+    //     // force stop the click from happening
+    //     evt.preventDefault();
+    //     evt.stopImmediatePropagation();
+    //   }
 
-      showDropdown($el);
-    });
+    //   showDropdown($el);
+    // });
 
     // check when we're leaving a dropdown and close the active dropdown
     $(selectors.siteNavChildLink).on('focusout.siteNav', function() {
@@ -3038,7 +3039,9 @@ $(document).ready(function() {
   if (route == homeRoute) {
     // search drawer
 	$('#SearchDrawer').css('margin-top', '45px')
-    
+  $('.site-nav li').removeClass('site-nav--has-dropdown')
+  $('.icon-chevron-down').hide();
+  
     //header navbar
     $('#header-wrapper').removeClass('header-background-white');
     $('.mobile-nav-wrapper').css('margin-top', '40px');
