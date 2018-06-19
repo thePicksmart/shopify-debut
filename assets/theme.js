@@ -3041,7 +3041,7 @@ $(document).ready(function() {
     
     //header navbar
     $('#header-wrapper').removeClass('header-background-white');
-    $('.mobile-nav-wrapper').css('margin-top', '41px');
+    $('.mobile-nav-wrapper').css('margin-top', '40px');
     $('.icon-cong').addClass('icon-white');
     $(window).bind('scroll', function() {
       var distance = 5;
