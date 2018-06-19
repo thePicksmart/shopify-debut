@@ -417,7 +417,7 @@ snippets/social-sharing.liquid:
   development: 2018-06-13T19:53:15+10:00   60955545cf27dc88d2c41a20d0d18746
   production: 2018-06-13T18:50:30+10:00   60955545cf27dc88d2c41a20d0d18746
 snippets/subcollection-bedroom-heavenly-decor-pillows.liquid:
-  development: 2018-06-13T19:53:15+10:00   6b6b471d613d3e930c0df4ed3c03aa0b
+  development: 2018-06-19T16:28:55+10:00   6b6b471d613d3e930c0df4ed3c03aa0b
   production: 2018-06-13T18:50:30+10:00   6b6b471d613d3e930c0df4ed3c03aa0b
 snippets/subcollection-bedroom-the-cozy-layer.liquid:
   development: 2018-06-13T19:53:15+10:00   4e6904bb86a74e6d41f482bd3d045c04
@@ -551,12 +551,26 @@ templates/page.contact.liquid:
 templates/page.footer-info.liquid:
   development: 2018-06-13T19:53:17+10:00   d1f0dc8d81fc22b16214c5f7355ad591
   production: 2018-06-13T18:50:32+10:00   d1f0dc8d81fc22b16214c5f7355ad591
+templates/page.happiness-is-home-made.liquid:
+  development: 2018-06-19T16:21:23+10:00   2b889de7fe4d5eb7c458344b48270b67
+templates/page.heartwarming-kitchen.liquid:
+  development: 2018-06-19T16:24:01+10:00   0f67f0d78d1f4e06b27804148fcec844
+templates/page.heavenly-decor-pillows.liquid:
+  development: 2018-06-19T16:14:02+10:00   a58105dc5a37cdedc34981208bd3ef06
 templates/page.home-entrance.liquid:
   development: 2018-06-13T19:53:17+10:00   d6abe76c93c1590220d7ef6a06688276
   production: 2018-06-13T18:50:32+10:00   d6abe76c93c1590220d7ef6a06688276
+templates/page.keepem-brewing.liquid:
+  development: 2018-06-19T16:18:09+10:00   65bc2bd92105a692c9aaed930ca6b955
+templates/page.lights-on.liquid:
+  development: 2018-06-19T14:14:27+10:00   850a3b2e211c37a431ee6520c7d113e6
 templates/page.liquid:
   development: 2018-06-13T19:53:17+10:00   7551f48a07e49911e032c4dea82638f8
   production: 2018-06-13T18:50:32+10:00   7551f48a07e49911e032c4dea82638f8
+templates/page.mongolian-cashmere.liquid:
+  development: 2018-06-19T16:26:43+10:00   0dd700323d2a4cf8811b600e87d5bcaa
+templates/page.mulberry-silk.liquid:
+  development: 2018-06-19T16:27:42+10:00   3956dfa67e7bb3ce6a78ad3f406a6b50
 templates/page.our-story.liquid:
   development: 2018-06-13T19:53:17+10:00   96f1ac6e2f565899c502e5ae745738fe
   production: 2018-06-13T18:50:32+10:00   96f1ac6e2f565899c502e5ae745738fe
@@ -575,6 +589,12 @@ templates/page.pagefly.13964869674.liquid:
 templates/page.pagefly.14219444266.liquid:
   development: 2018-06-13T19:53:17+10:00   864309e96127f85182ef2292a4e7cf93
   production: 2018-06-13T18:50:32+10:00   864309e96127f85182ef2292a4e7cf93
+templates/page.pamper-your-smile.liquid:
+  development: 2018-06-19T14:24:56+10:00   3edbb492ddf8ac77069a7b720b60e29b
+templates/page.spectacular-specticles.liquid:
+  development: 2018-06-19T16:27:21+10:00   c09b1e0ee60ce7d49ba178b79e73f78c
+templates/page.stay-powered.liquid:
+  development: 2018-06-19T14:24:53+10:00   74b366b8f3e4406ae1502dd76d695720
 templates/page.sub-collection-bedroom.liquid:
   development: 2018-06-14T19:51:02+10:00   aace04c9f0604895ac38c6a88aa62359
   production: 2018-06-14T20:08:11+10:00   aace04c9f0604895ac38c6a88aa62359
@@ -582,11 +602,33 @@ templates/page.sub-collection-clothing.liquid:
   development: 2018-06-13T19:53:17+10:00   e84d8e94c6b308ff2c2f391d2996197d
   production: 2018-06-13T18:50:32+10:00   e84d8e94c6b308ff2c2f391d2996197d
 templates/page.sub-collection-electronics.liquid:
-  development: 2018-06-13T19:53:17+10:00   412fe5492f49a92216f9e6b812e631b8
+  development: 2018-06-19T16:31:07+10:00   6a17bda95a67bb70b615e43113302ac1
   production: 2018-06-13T18:50:32+10:00   412fe5492f49a92216f9e6b812e631b8
 templates/page.sub-collection-kitchen.liquid:
   development: 2018-06-13T19:53:18+10:00   a1fc6478bf2699a5f8652c61eba35c11
   production: 2018-06-13T18:50:32+10:00   a1fc6478bf2699a5f8652c61eba35c11
+templates/page.the-cozy-layer.liquid:
+  development: 2018-06-19T16:14:26+10:00   f11869f69807408491d4d2b3e9c04aa2
+templates/page.the-curtain-call.liquid:
+  development: 2018-06-19T14:34:11+10:00   e8b31874284eddef655d731c229ba46f
+templates/page.the-good-inside.liquid:
+  development: 2018-06-19T16:28:06+10:00   47211fc63c2b6bdb7d2a2b3402f32bfc
+templates/page.the-hotel-like-bedroom.liquid:
+  development: 2018-06-19T16:14:41+10:00   8bf73ec236ae60f18fa2eca1df294b0c
+templates/page.the-jet-set.liquid:
+  development: 2018-06-19T16:28:24+10:00   12183a8dea48611aedecd6740c61209c
+templates/page.the-modern-groomer.liquid:
+  development: 2018-06-19T16:28:38+10:00   6268a25799d91f413d16cf25b88ecdbb
+templates/page.the-to-go-pair.liquid:
+  development: 2018-06-19T16:27:59+10:00   389c5e5349b93ca135cb85774fd1c07e
+templates/page.walking-on-the-clouds.liquid:
+  development: 2018-06-19T14:33:38+10:00   3cb70e560d17f19e6da2cd6718ff0b51
+templates/page.work-it-out.liquid:
+  development: 2018-06-19T16:28:16+10:00   dffe1d705e27483dedfe531b161ca336
+templates/page.your-culinary-dreams-are-shining.liquid:
+  development: 2018-06-19T16:26:17+10:00   48604f55b29260b84eb19395f6f2525f
+templates/page.zen-home.liquid:
+  development: 2018-06-19T16:14:48+10:00   28298706fe811edf93d66bcde441dfc2
 templates/password.liquid:
   development: 2018-06-13T19:53:18+10:00   30d1743d26765ce8c3fa53a3fdf9524f
   production: 2018-06-13T18:50:33+10:00   30d1743d26765ce8c3fa53a3fdf9524f
