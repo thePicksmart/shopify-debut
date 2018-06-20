@@ -6401,7 +6401,7 @@ $toolbar-height-small: 46px;
 
 .newsletter-text {
 /*   float: left; */
-  font-size: 30px;
+  font-size: 22px;
 /*   margin: 42px 30px 41px 0; */
   text-transform: uppercase;
   font-weight: bold;
@@ -6410,10 +6410,18 @@ $toolbar-height-small: 46px;
   padding: 5px 0;
   
   @include media-query($small) {
-    margin-bottom: 10px;
     text-align: left;
     font-size: 16px;
     font-weight: 500;
+  }
+}
+
+.newsletter-text-small {
+  font-size: 18px;
+  font-weight: normal;
+
+  @include media-query($small) {
+    font-size:15px;
   }
 }
 
@@ -8435,7 +8443,7 @@ button:focus, textarea:focus, input:focus{outline:0;}
   background: #dbd5c0;
   clear:left;
   padding: 20px;
-  height:100px;
+  height:105px;
   
   @include media-query ($small) {
     padding: 0 !important;
