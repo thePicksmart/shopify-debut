@@ -606,7 +606,7 @@ templates/page.stay-powered.liquid:
   development: 2018-06-19T14:24:53+10:00   74b366b8f3e4406ae1502dd76d695720
   production: 2018-06-19T16:36:23+10:00   74b366b8f3e4406ae1502dd76d695720
 templates/page.sub-collection-bedroom.liquid:
-  development: 2018-06-14T19:51:02+10:00   aace04c9f0604895ac38c6a88aa62359
+  development: 2018-06-20T14:03:18+10:00   aace04c9f0604895ac38c6a88aa62359
   production: 2018-06-14T20:08:11+10:00   aace04c9f0604895ac38c6a88aa62359
 templates/page.sub-collection-clothing.liquid:
   development: 2018-06-13T19:53:17+10:00   e84d8e94c6b308ff2c2f391d2996197d
