@@ -134,8 +134,10 @@
       if($('.slideshow-wrapper-cong').length) {
         $('.slideshow-wrapper-cong .slick-prev').addClass('hide-on-mobile');
         $('.slideshow-wrapper-cong .slick-next').addClass('hide-on-mobile');
-        $('.slideshow-wrapper-cong .slick-prev').html("<img src='https://storage.googleapis.com/picksmart-img-au/assets/home-colletcion-arrow-left.png'>");
-        $('.slideshow-wrapper-cong .slick-next').html("<img src='https://storage.googleapis.com/picksmart-img-au/assets/home-colletcion-arrow-right.png'>");
+        //$('.slideshow-wrapper-cong .slick-prev').html("<img style='width:100px; border: 1px solid red; ' src='https://storage.googleapis.com/picksmart-img-au/assets/home-colletcion-arrow-left.png'>");
+        //$('.slideshow-wrapper-cong .slick-next').html("<img style='width:100px; border: 1px solid red; ' src='https://storage.googleapis.com/picksmart-img-au/assets/home-colletcion-arrow-right.png'>");
+        $('.slideshow-wrapper-cong .slick-prev').css('background', '#ffffff url(https://storage.googleapis.com/picksmart-img-au/assets/home-colletcion-arrow-left.png) no-repeat 15px 20px')
+        $('.slideshow-wrapper-cong .slick-next').css('background', '#ffffff url(https://storage.googleapis.com/picksmart-img-au/assets/home-colletcion-arrow-right.png) no-repeat 17px 20px')
       }
       
       if($('#shopify-section-1527153293515').length) {
