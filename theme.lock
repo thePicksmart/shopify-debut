@@ -39,7 +39,7 @@ assets/theme.js:
   development: 2018-06-19T20:21:55+10:00   c6d5a7c94b1a7c8380e27e6409d65500
   production: 2018-06-19T20:22:39+10:00   c6d5a7c94b1a7c8380e27e6409d65500
 assets/theme.scss.liquid:
-  development: 2018-06-21T19:25:19+10:00   bff0753eb28659e3020ffe9b16d6366f
+  development: 2018-06-21T19:51:31+10:00   ff3b948b67fe629fff7cecfaa3397532
   production: 2018-06-21T19:26:55+10:00   bff0753eb28659e3020ffe9b16d6366f
 assets/vendor.js:
   development: 2018-06-13T19:53:12+10:00   cb7c4217c9b6feb844647b361accfe6c
@@ -117,7 +117,7 @@ sections/featured-product.liquid:
   development: 2018-06-13T19:53:08+10:00   9c2cd13b0e7e12c4468426c6119eb30e
   production: 2018-06-13T18:50:23+10:00   9c2cd13b0e7e12c4468426c6119eb30e
 sections/footer.liquid:
-  development: 2018-06-20T19:03:03+10:00   0b24e77b008c4c18760a3dbb3fef3fea
+  development: 2018-06-21T19:47:03+10:00   64b303179fb98f73d457d031f5d039f1
   production: 2018-06-20T19:03:46+10:00   0b24e77b008c4c18760a3dbb3fef3fea
 sections/header.liquid:
   development: 2018-06-19T20:17:10+10:00   190f340157ad70eaef81354482109539
