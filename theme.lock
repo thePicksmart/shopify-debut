@@ -39,14 +39,14 @@ assets/theme.js:
   development: 2018-06-19T20:21:55+10:00   c6d5a7c94b1a7c8380e27e6409d65500
   production: 2018-06-19T20:22:39+10:00   c6d5a7c94b1a7c8380e27e6409d65500
 assets/theme.scss.liquid:
-  development: 2018-06-21T12:19:36+10:00   dce60ec88cb98845840d84f5558f783b
-  production: 2018-06-21T12:10:49+10:00   dce60ec88cb98845840d84f5558f783b
+  development: 2018-06-21T13:50:14+10:00   a5bb94539b97e70f176c468ddb08d622
+  production: 2018-06-21T12:54:17+10:00   a5bb94539b97e70f176c468ddb08d622
 assets/vendor.js:
   development: 2018-06-13T19:53:12+10:00   cb7c4217c9b6feb844647b361accfe6c
   production: 2018-06-13T18:50:27+10:00   cb7c4217c9b6feb844647b361accfe6c
 config/settings_data.json:
-  development: 2018-06-15T17:24:30+10:00   8f9c24fefcfb86357a2789b5d7cf74cc
-  production: 2018-06-15T12:29:29+10:00   8f9c24fefcfb86357a2789b5d7cf74cc
+  development: 2018-06-21T13:50:17+10:00   2aed99f7eb6d3d60bc3d2c74d9a76dca
+  production: 2018-06-21T12:30:44+10:00   2aed99f7eb6d3d60bc3d2c74d9a76dca
 config/settings_schema.json:
   development: 2018-06-13T19:53:18+10:00   e4a0cfe0dc112d5372c98fc6aa5b7faf
   production: 2018-06-13T18:50:33+10:00   e4a0cfe0dc112d5372c98fc6aa5b7faf
@@ -460,7 +460,9 @@ snippets/subcollection-clothing-work-it-out.liquid:
   production: 2018-06-19T16:58:14+10:00   fb258f72a4adde294f252aa8907beafc
 snippets/subcollection-electronics-lights-on.liquid:
   development: 2018-06-19T18:06:33+10:00   b5e90f76cb79bc07b9dbba44f68c5cab
-  production: 2018-06-15T18:41:59+10:00   b5e90f76cb79bc07b9dbba44f68c5cab
+  production: 2018-06-21T12:42:13+10:00   b5e90f76cb79bc07b9dbba44f68c5cab
+snippets/subcollection-electronics-the-innovative-touch.liquid:
+  development: 2018-06-21T13:50:16+10:00   985ab99bb8e68cb1847a2c24a8d9452f
 snippets/subcollection-kitchen-happiness-is-home-made.liquid:
   development: 2018-06-19T18:06:26+10:00   ef24e404488c96f0e274bdcc5d973fe3
   production: 2018-06-19T16:58:12+10:00   ef24e404488c96f0e274bdcc5d973fe3
@@ -606,17 +608,17 @@ templates/page.stay-powered.liquid:
   development: 2018-06-19T14:24:53+10:00   74b366b8f3e4406ae1502dd76d695720
   production: 2018-06-19T16:36:23+10:00   74b366b8f3e4406ae1502dd76d695720
 templates/page.sub-collection-bedroom.liquid:
-  development: 2018-06-20T14:03:18+10:00   aace04c9f0604895ac38c6a88aa62359
-  production: 2018-06-14T20:08:11+10:00   aace04c9f0604895ac38c6a88aa62359
+  development: 2018-06-21T13:50:14+10:00   0cd06b9a988d816cbaae465fc8cd4bad
+  production: 2018-06-21T12:22:14+10:00   0cd06b9a988d816cbaae465fc8cd4bad
 templates/page.sub-collection-clothing.liquid:
-  development: 2018-06-13T19:53:17+10:00   e84d8e94c6b308ff2c2f391d2996197d
-  production: 2018-06-13T18:50:32+10:00   e84d8e94c6b308ff2c2f391d2996197d
+  development: 2018-06-21T13:50:15+10:00   3f3913f5a093c3944d6cfd92f0afc2d3
+  production: 2018-06-21T12:27:49+10:00   3f3913f5a093c3944d6cfd92f0afc2d3
 templates/page.sub-collection-electronics.liquid:
-  development: 2018-06-19T16:34:13+10:00   412fe5492f49a92216f9e6b812e631b8
-  production: 2018-06-13T18:50:32+10:00   412fe5492f49a92216f9e6b812e631b8
+  development: 2018-06-21T13:50:14+10:00   08adfb41933fc7259e1f4f5fc42f42da
+  production: 2018-06-21T12:55:00+10:00   08adfb41933fc7259e1f4f5fc42f42da
 templates/page.sub-collection-kitchen.liquid:
-  development: 2018-06-13T19:53:18+10:00   a1fc6478bf2699a5f8652c61eba35c11
-  production: 2018-06-13T18:50:32+10:00   a1fc6478bf2699a5f8652c61eba35c11
+  development: 2018-06-21T13:50:15+10:00   e97b7dc7457206bdbab6c365fcd588b2
+  production: 2018-06-21T12:29:40+10:00   e97b7dc7457206bdbab6c365fcd588b2
 templates/page.the-cozy-layer.liquid:
   development: 2018-06-19T16:14:26+10:00   f11869f69807408491d4d2b3e9c04aa2
   production: 2018-06-19T16:36:30+10:00   f11869f69807408491d4d2b3e9c04aa2
@@ -629,6 +631,9 @@ templates/page.the-good-inside.liquid:
 templates/page.the-hotel-like-bedroom.liquid:
   development: 2018-06-19T16:14:41+10:00   8bf73ec236ae60f18fa2eca1df294b0c
   production: 2018-06-19T16:36:30+10:00   8bf73ec236ae60f18fa2eca1df294b0c
+templates/page.the-innovative-touch.liquid:
+  development: 2018-06-21T13:50:14+10:00   ededaed53d3898ea52ec270540aab1a2
+  production: 2018-06-21T12:57:07+10:00   ededaed53d3898ea52ec270540aab1a2
 templates/page.the-jet-set.liquid:
   development: 2018-06-19T16:28:24+10:00   12183a8dea48611aedecd6740c61209c
   production: 2018-06-19T16:36:27+10:00   12183a8dea48611aedecd6740c61209c
