@@ -40,13 +40,13 @@ assets/theme.js:
   production: 2018-06-19T20:22:39+10:00   c6d5a7c94b1a7c8380e27e6409d65500
 assets/theme.scss.liquid:
   development: 2018-06-21T19:51:31+10:00   ff3b948b67fe629fff7cecfaa3397532
-  production: 2018-06-21T19:26:55+10:00   bff0753eb28659e3020ffe9b16d6366f
+  production: 2018-06-21T19:59:52+10:00   ff3b948b67fe629fff7cecfaa3397532
 assets/vendor.js:
   development: 2018-06-13T19:53:12+10:00   cb7c4217c9b6feb844647b361accfe6c
   production: 2018-06-13T18:50:27+10:00   cb7c4217c9b6feb844647b361accfe6c
 config/settings_data.json:
-  development: 2018-06-21T13:50:17+10:00   2aed99f7eb6d3d60bc3d2c74d9a76dca
-  production: 2018-06-21T12:30:44+10:00   2aed99f7eb6d3d60bc3d2c74d9a76dca
+  development: 2018-06-21T19:55:56+10:00   b8dcf5994fa50c2805ac608b8e3a179b
+  production: 2018-06-21T19:49:23+10:00   b8dcf5994fa50c2805ac608b8e3a179b
 config/settings_schema.json:
   development: 2018-06-13T19:53:18+10:00   e4a0cfe0dc112d5372c98fc6aa5b7faf
   production: 2018-06-13T18:50:33+10:00   e4a0cfe0dc112d5372c98fc6aa5b7faf
@@ -118,7 +118,7 @@ sections/featured-product.liquid:
   production: 2018-06-13T18:50:23+10:00   9c2cd13b0e7e12c4468426c6119eb30e
 sections/footer.liquid:
   development: 2018-06-21T19:47:03+10:00   64b303179fb98f73d457d031f5d039f1
-  production: 2018-06-20T19:03:46+10:00   0b24e77b008c4c18760a3dbb3fef3fea
+  production: 2018-06-21T19:59:50+10:00   64b303179fb98f73d457d031f5d039f1
 sections/header.liquid:
   development: 2018-06-19T20:17:10+10:00   190f340157ad70eaef81354482109539
   production: 2018-06-19T20:18:11+10:00   190f340157ad70eaef81354482109539
