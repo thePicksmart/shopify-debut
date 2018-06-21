@@ -8696,3 +8696,66 @@ span.stamped-file-uploader {
   color: #bdb086;
   padding: 0;
 }
+
+/* footer pages */
+.info-page-container {
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: 0.2px;
+  color: #333333;
+  max-width: 700px;
+  margin: 40px auto;
+  padding-top: 20px;
+  min-height: 300px;
+  
+  @include media-query($small) {
+    padding: 0 15px;
+  }
+}
+.page-header {
+  font-size: 38px;
+  margin: 40px 0;
+  font-weight: 500;
+  
+  @include media-query($small) {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+.page-section-header {
+  font-size: 22px;
+  padding: 20px 0;
+  letter-spacing: 0.3px;
+
+  @include media-query($small) {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+}
+.page-section-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.page-section-text {
+  margin-bottom: 20px
+}
+.page-section-divider {
+  height: 1px;
+  background-color: #333;
+  margin-bottom: 10px;
+}
+
+.shipping-info-table {
+  max-width: 600px;
+  margin: 0 auto;
+  
+  @include media-query($small) {
+    width: 100%;
+  }
+}
