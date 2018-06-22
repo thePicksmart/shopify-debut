@@ -3061,6 +3061,7 @@ $(document).ready(function() {
   } else if (route == storyRoute) {
     $('#header-wrapper').removeClass('header-background-white');
     $('.icon-cong').addClass('icon-white');
+    $('.site-footer').css('margin-top', '0');
   } else {
     $('#header-wrapper').addClass('header-add-on');
   }
@@ -3086,6 +3087,16 @@ $(document).ready(function() {
       } else {
         $('#header-wrapper').addClass('header-background-white')
       }
+    }
+  });
+
+  $(".scroll-to-show-text").hide();
+  var topOfContainer = $(".scroll-to-show-container").offset().top;
+  $(window).scroll(function() {
+    if($(window).scrollTop() > topOfContainer) {
+      $(".scroll-to-show-text").fadeIn(1500);
+    } else {
+      $(".scroll-to-show-text").fadeOut(1500);
     }
   });
 })
