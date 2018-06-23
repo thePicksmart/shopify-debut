@@ -1,0 +1,21 @@
+<div class="collection-wrapper">
+  {{ page.content }}
+  <!-- Pamper your smile -->
+  {% comment %} <div id="pamper-your-smile" class="anchor-placeholder"></div> {% endcomment %}
+  <div class="collection-section-header">PAMPER YOUR SMILE</div>
+  <div class="bedroom-section-container">
+    <img style="margin-bottom: -7px; object-position: 75%;" class="bedroom-section-background-img"src="https://storage.googleapis.com/picksmart-img-au/collection-page/electronics/img-1.png"/>
+    <div class="bedroom-section-text">Great smile often leads to the best first impression. Enter the 21st century of oral hygiene by adding power to your toothbrushes!</div>
+  </div>
+<!--  Pamper your smile product list -->
+  <div class="grid grid--uniform custom-collection-grid-list" role="list" style="margin-top: 15px; margin-left: 1%; margin-right: 1%">
+  {% for product in collections.electronics-acc.products %}
+    {% if product.tags contains "pamperyoursmile" %}
+    {% include 'product-card-grid-new-collection-page' %}
+    {% endif %}
+  {% endfor %}
+  </div>
+  <div class="shop-all-button-container">
+    <a href="https://thepicksmart.com/collections/electronics-acc" class="shop-all-button">SHOP ALL</a>
+  </div>
+</div>

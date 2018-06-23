@@ -49,7 +49,7 @@
             <ul>
               {% for childlink in linklists[child_list_handle].links %}
                 <li {% if childlink.active %}class="site-nav--active"{% endif %}>
-                  <a href="{{ childlink.url }}" class="site-nav__link site-nav__child-link{% if forloop.last %} site-nav__link--last{% endif %}">{{ childlink.title | escape }}</a>
+                  <a href="{{ childlink.url }}" class="site-nav__link site-nav__child-link{% if forloop.last %} site-nav__link--last{% endif %} {% if childlink.active %} site-nav--active{% endif %}">{{ childlink.title | escape }}</a>
                 </li>
               {% endfor %}
             </ul>

@@ -852,17 +852,18 @@ theme.Header = (function() {
   function init() {
     cacheSelectors();
 
-    cache.$parents.on('click.siteNav', function(evt) {
-      var $el = $(this);
+    // comment to prevent click to show menu dropdown
+    // cache.$parents.on('click.siteNav', function(evt) {
+    //   var $el = $(this);
 
-      if (!$el.hasClass(config.activeClass)) {
-        // force stop the click from happening
-        evt.preventDefault();
-        evt.stopImmediatePropagation();
-      }
+    //   if (!$el.hasClass(config.activeClass)) {
+    //     // force stop the click from happening
+    //     evt.preventDefault();
+    //     evt.stopImmediatePropagation();
+    //   }
 
-      showDropdown($el);
-    });
+    //   showDropdown($el);
+    // });
 
     // check when we're leaving a dropdown and close the active dropdown
     $(selectors.siteNavChildLink).on('focusout.siteNav', function() {
@@ -3038,10 +3039,12 @@ $(document).ready(function() {
   if (route == homeRoute) {
     // search drawer
 	$('#SearchDrawer').css('margin-top', '45px')
-    
+  $('.site-nav li').removeClass('site-nav--has-dropdown')
+  $('.icon-chevron-down').hide();
+  
     //header navbar
     $('#header-wrapper').removeClass('header-background-white');
-    $('.mobile-nav-wrapper').css('margin-top', '41px');
+    $('.mobile-nav-wrapper').css('margin-top', '40px');
     $('.icon-cong').addClass('icon-white');
     $(window).bind('scroll', function() {
       var distance = 5;
@@ -3058,6 +3061,7 @@ $(document).ready(function() {
   } else if (route == storyRoute) {
     $('#header-wrapper').removeClass('header-background-white');
     $('.icon-cong').addClass('icon-white');
+    $('.site-footer').css('margin-top', '0');
   } else {
     $('#header-wrapper').addClass('header-add-on');
   }
@@ -3083,6 +3087,16 @@ $(document).ready(function() {
       } else {
         $('#header-wrapper').addClass('header-background-white')
       }
+    }
+  });
+
+  $(".scroll-to-show-text").hide();
+  var topOfContainer = $(".scroll-to-show-container").offset().top;
+  $(window).scroll(function() {
+    if($(window).scrollTop() > topOfContainer) {
+      $(".scroll-to-show-text").fadeIn(1500);
+    } else {
+      $(".scroll-to-show-text").fadeOut(1500);
     }
   });
 })

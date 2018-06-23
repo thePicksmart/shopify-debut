@@ -1,0 +1,17 @@
+<!--  THE INNNOVATIVE TOUCH  -->
+<!--   <div id="the-innovative-touch" class="anchor-placeholder"></div> -->
+<div class="collection-section-header">THE INNOVATIVE TOUCH</div>
+<div class="bedroom-section-container">
+  <img style="margin-bottom: -7px;" class="bedroom-section-background-img hide-on-mobile" src="https://storage.googleapis.com/picksmart-img-au/collection-page/electronics/the-innovative-touch-p.png"/>
+  <img style="margin-bottom: -7px;" class="bedroom-section-background-img show-on-mobile" src="https://storage.googleapis.com/picksmart-img-au/collection-page/electronics/the-innovative-touch-m.png"/>
+  <div class="subsection-section-text subsection-section-text-innovative">World is full of creative minds and with the marriage of creativity and technology of the 21st century, we are open to array of choices that can truly change our lives. Find world’s most fun, unique, creative and innovative items for tech savvy you.</div>
+</div>
+
+<!-- THE CURTAIN CALL PRODUCT LIST  -->
+<div class="grid grid--uniform custom-collection-grid-list" role="list" style="margin-top: 15px; margin-left: 1%; margin-right: 1%">
+  {% for product in collections.electronics-acc.products %}
+  {% if product.tags contains "innovative" %}
+  {% include 'product-card-grid-new-collection-page' %}
+  {% endif %}
+  {% endfor %}
+</div>

@@ -19,16 +19,16 @@
     <div class="page-width">
       <div class="grid grid--uniform grid--blog">
         {% for article in blog.articles %}
-          <div class="grid__item medium-up--one-third">
+          <div class="grid__item medium-up--one-half grid--blog-item ">
             {% if article.image %}
               {% capture img_id %}ArticleImage-{{ article.image.id }}{% endcapture %}
               {% capture img_wrapper_id %}ArticleImageWrapper-{{ article.image.id }}{% endcapture %}
               {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
-              {% include 'image-style' with image: article.image, small_style: true, width: 345, height: 345, wrapper_id: img_wrapper_id, img_id: img_id %}
+<!--               {% include 'image-style' with image: article.image, small_style: true, width: 345, height: 345, wrapper_id: img_wrapper_id, img_id: img_id %} -->
 
-              <div id="{{ img_wrapper_id }}" class="article__grid-image-wrapper js">
-                <a href="{{ article.url }}" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100}}%;" class="article__grid-image-container">
+              <div class="article__grid-image-wrapper js">
+                <a href="{{ article.url }}" style="padding-top: 281px;" class="article__grid-image-container">
                   <img id="{{ img_id }}"
                        class="article__grid-image lazyload"
                        src="{{ article.image | img_url: '300x300' }}"
@@ -48,9 +48,9 @@
             {% endif %}
 
             <div class="article__grid-meta{% if article.image %} article__grid-meta--has-image{% endif %}">
-              <h2 class="article__title h3">
+              <div class="article__title h3">
                 <a href="{{ article.url }}">{{ article.title }}</a>
-              </h2>
+              </div>
 
               {% if section.settings.blog_show_author %}
                 <span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
@@ -80,7 +80,7 @@
 
               <ul class="list--inline">
                 <li>
-                  <a href="{{ article.url }}" class="btn btn--secondary btn--small">
+                  <a href="{{ article.url }}" class="btn btn--secondary btn--small btn--read-more">
                     {{ 'blogs.article.read_more' | t }}
                   </a>
                 </li>
@@ -94,6 +94,8 @@
                 {% endif %}
               </ul>
             </div>
+            
+            <div class="{% unless forloop.last %} border-bottom-small {% endunless %}"></div>
           </div>
         {% endfor %}
       </div>
@@ -121,9 +123,9 @@
                   {% capture img_wrapper_id %}ArticleImageWrapper-{{ article.image.id }}{% endcapture %}
                   {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
-                  {% include 'image-style' with image: article.image, small_style: false, width: 905, height: 600, wrapper_id: img_wrapper_id, img_id: img_id %}
+<!--                   {% include 'image-style' with image: article.image, small_style: false, width: 905, height: 600, wrapper_id: img_wrapper_id, img_id: img_id %} -->
 
-                  <div id="{{ img_wrapper_id }}" class="article__list-image-wrapper js">
+                  <div class="article__list-image-wrapper js">
                     <a href="{{ article.url }}" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100}}%;" class="article__list-image-container">
                       <img id="{{ img_id }}"
                            class="article__list-image lazyload"

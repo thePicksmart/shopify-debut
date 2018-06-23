@@ -259,7 +259,7 @@
               "subheading": "From Delonghi Designated Manufacturer",
               "button_label": "Shop",
               "button_link": "shopify:\/\/pages\/kitchen-collection",
-              "anchor": ""
+              "anchor": "keepem-brewing"
             }
           },
           "1527065085636-1": {
@@ -272,7 +272,7 @@
               "subheading": "From Energizer Designated Manufacturer",
               "button_label": "Shop",
               "button_link": "shopify:\/\/pages\/electronics-collection",
-              "anchor": ""
+              "anchor": "stay-powered"
             }
           },
           "1527244288172": {
@@ -426,15 +426,15 @@
               "button_link": "shopify:\/\/pages\/our-story"
             }
           },
-          "1528252419345": {
+          "1528963763907": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/2_8f8a0d0b-3324-4cec-a9a4-e01884f843ab.png",
-              "image_mobile": "shopify:\/\/shop_images\/banner-3_b788c1ad-fc3e-4d46-beaf-ca696f21db49.png",
-              "alignment": "center",
+              "image": "shopify:\/\/shop_images\/3_2_dea33267-e454-402b-939f-ec7e9a82dec0.png",
+              "image_mobile": "shopify:\/\/shop_images\/20_7246e88f-ffbf-428e-accc-24e99e6f29fd.png",
+              "alignment": "top",
               "title": "",
               "subheading": "",
-              "link": "shopify:\/\/pages\/kitchen-collection",
+              "link": "shopify:\/\/products\/barsetto-tripresso-portable-coffee-machine-deal",
               "button_label": "",
               "button_link": ""
             }
@@ -460,7 +460,20 @@
               "alignment": "center",
               "title": "",
               "subheading": "",
-              "link": "https:\/\/thepicksmart.com\/#shopify-section-footer",
+              "link": "https:\/\/thepicksmart.com\/#footer-wrapper",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1528970436083": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/youhui.png",
+              "image_mobile": "shopify:\/\/shop_images\/17_733f7172-e769-4cbf-bf9a-c7ffcbc6a648.png",
+              "alignment": "top",
+              "title": "",
+              "subheading": "",
+              "link": "",
               "button_label": "",
               "button_link": ""
             }
@@ -468,9 +481,10 @@
         },
         "block_order": [
           "1527846145098-0",
-          "1528252419345",
+          "1528963763907",
           "1528252432789",
-          "1528252439426"
+          "1528252439426",
+          "1528970436083"
         ],
         "settings": {
           "autoplay": false,
@@ -482,7 +496,7 @@
       "blog-template": {
         "type": "blog-template",
         "settings": {
-          "layout": "list",
+          "layout": "grid",
           "blog_show_author": false,
           "blog_show_date": false
         }

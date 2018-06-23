@@ -1,0 +1,17 @@
+<!--  COOK OUTSIDE THE BOX  -->
+<!--   <div id="cook-outside-the-box" class="anchor-placeholder"></div> -->
+<div class="collection-section-header">COOK OUTSIDE THE BOX</div>
+<div class="bedroom-section-container">
+  <img style="margin-bottom: -7px;" class="bedroom-section-background-img hide-on-mobile" src="https://storage.googleapis.com/picksmart-img-au/collection-page/kitchen/cook-outside-the-box-pc.png"/>
+  <img style="margin-bottom: -7px;" class="show-on-mobile" src="https://storage.googleapis.com/picksmart-img-au/collection-page/kitchen/cook-outside-the-box-m.png"/>
+  <div class="subsection-section-text subsection-section-text-bottom">Cook outside the box with our selection of creative kitchen appliances and gadgets. Collection of innovative kitchen products that will create new and better ways to prepare food.</div>
+</div>
+
+<!-- COOK OUTSIDE THE BOX LIST  -->
+<div class="grid grid--uniform custom-collection-grid-list" role="list" style="margin-top: 15px; margin-left: 1%; margin-right: 1%">
+  {% for product in collections.kitchen.products %}
+  {% if product.tags contains "cookbox" %}
+  {% include 'product-card-grid-new-collection-page' %}
+  {% endif %}
+  {% endfor %}
+</div>

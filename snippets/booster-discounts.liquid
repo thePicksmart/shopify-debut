@@ -1567,6 +1567,7 @@ reqJquery(function($){
       else if (discountMethod == 'off'){
         var baPrice = price - (disValue * 100);
       }
+      if (baPrice < 0) baPrice = 0;
 
       var disPrice = baDisplayCents(baPrice);
       var ogPrice  = baDisplayCents(price);
